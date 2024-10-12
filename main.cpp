@@ -27,28 +27,17 @@ int main() {
     unsigned nombreDeVotants;
     unsigned Compteur = 0;
     unsigned nombreDeVoteBlanc = 0;
-    string saisiNomCandidat = "";
+    string saisiNomCandidat = " ";
     cout << "Entrez le nombre de votants participants : ";
     cin >> nombreDeVotants;
-    cout << "Vous pouvez voter pour ";
     while (Compteur < nombreDeVotants) {
+        cout << "La liste des candidats est : " << endl << "1. John" << endl << "2. Brom" << endl << "3. Sam" << endl << "4. Sofia" << endl;
         cout << "Entez le nom du candidat : ";
         cin >> saisiNomCandidat;
         cout << endl;
         Compteur++;
-        if (saisiNomCandidat == "John" or saisiNomCandidat == "Brom" or saisiNomCandidat == "Sam" or saisiNomCandidat == "Sofia") {
-            if (saisiNomCandidat == "John") {
-                candidats["John"] += 1;
-            }
-            if (saisiNomCandidat == "Brom") {
-                candidats["Brom"] += 1;
-            }
-            if (saisiNomCandidat == "Sam") {
-                candidats["Sam"] += 1;
-            }
-            if (saisiNomCandidat == "Sofia") {
-                candidats["Sofia"] += 1;
-            }
+        if (candidats.find(saisiNomCandidat) != candidats.end()) {
+            candidats[saisiNomCandidat] += 1;
         }
         else {
             nombreDeVoteBlanc++;
