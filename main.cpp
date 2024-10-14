@@ -28,10 +28,13 @@ int main() {
     unsigned Compteur = 0;
     unsigned nombreDeVoteBlanc = 0;
     string saisiNomCandidat = " ";
+    string saisiNomDuVotant = " ";
     cout << "Entrez le nombre de votants participants : ";
     cin >> nombreDeVotants;
     while (Compteur < nombreDeVotants) {
-        cout << "La liste des candidats est : " << endl << "1. John" << endl << "2. Brom" << endl << "3. Sam" << endl << "4. Sofia" << endl;
+        cout << "Qui êtes vous ? ";
+        cin >> saisiNomDuVotant;
+        cout << "Bonjour, " << saisiNomDuVotant << " ! " << endl << "Voici la liste des candidats est : " << endl << "1. John" << endl << "2. Brom" << endl << "3. Sam" << endl << "4. Sofia" << endl;
         cout << "Entez le nom du candidat : ";
         cin >> saisiNomCandidat;
         cout << endl;
