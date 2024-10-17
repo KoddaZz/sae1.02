@@ -61,10 +61,31 @@ int main() {
     unsigned nombreDeleguesRegion = 0;
     unsigned nomAuHasard = 0;
     string saisiNomCandidat = " ";
+<<<<<<< HEAD
     cout << "Combien d'Etats / region voulez vous simuler ? ";
     cin >> nombreRegion;
     cout << "Combien de Délégués voulez vous par région ? ";
     cin >> nombreDeleguesRegion;
+=======
+    string saisiNomDuVotant = " ";
+    cout << "Entrez le nombre de votants participants : ";
+    cin >> nombreDeVotants;
+    while (Compteur < nombreDeVotants) {
+        cout << "Qui êtes vous ? ";
+        cin >> saisiNomDuVotant;
+        cout << "Bonjour, " << saisiNomDuVotant << " ! " << endl << "Voici la liste des candidats est : " << endl << "1. John" << endl << "2. Brom" << endl << "3. Sam" << endl << "4. Sofia" << endl;
+        cout << "Entez le nom du candidat : ";
+        cin >> saisiNomCandidat;
+        cout << endl;
+        Compteur++;
+        if (candidats.find(saisiNomCandidat) != candidats.end()) {
+            candidats[saisiNomCandidat] += 1;
+        }
+        else {
+            nombreDeVoteBlanc++;
+        }
+    }
+>>>>>>> 2a9c074e3ae60fd89e5a652997fdb178994940f4
 
     unsigned compteur2 = 0;
 
@@ -135,4 +156,7 @@ int main() {
 
     return 0;
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 2a9c074e3ae60fd89e5a652997fdb178994940f4
