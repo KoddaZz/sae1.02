@@ -5,6 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(sae1_02
     main.cpp
-    suffrage_indirect_algo.cpp
-    test_alternatif.cpp
-        suffrage_indirect_algo.cpp)
+        test_alternatif.cpp)
