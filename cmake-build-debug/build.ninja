@@ -55,12 +55,6 @@ build CMakeFiles/sae1_02.dir/main.cpp.obj: CXX_COMPILER__sae1_02_unscanned_Debug
   OBJECT_DIR = CMakeFiles\sae1_02.dir
   OBJECT_FILE_DIR = CMakeFiles\sae1_02.dir
 
-build CMakeFiles/sae1_02.dir/test_alternatif.cpp.obj: CXX_COMPILER__sae1_02_unscanned_Debug C$:/Users/jules/CLionProjects/sae1.02/test_alternatif.cpp || cmake_object_order_depends_target_sae1_02
-  DEP_FILE = CMakeFiles\sae1_02.dir\test_alternatif.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\sae1_02.dir
-  OBJECT_FILE_DIR = CMakeFiles\sae1_02.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target sae1_02
@@ -69,7 +63,7 @@ build CMakeFiles/sae1_02.dir/test_alternatif.cpp.obj: CXX_COMPILER__sae1_02_unsc
 #############################################
 # Link the executable sae1_02.exe
 
-build sae1_02.exe: CXX_EXECUTABLE_LINKER__sae1_02_Debug CMakeFiles/sae1_02.dir/main.cpp.obj CMakeFiles/sae1_02.dir/test_alternatif.cpp.obj
+build sae1_02.exe: CXX_EXECUTABLE_LINKER__sae1_02_Debug CMakeFiles/sae1_02.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\sae1_02.dir

@@ -39,7 +39,7 @@ int main() {
 
     cout << "Bienvenue sur une simulation d'un vote !" << endl;
     unsigned nombreDeVotants = 0; // Initialisation de nombreDeVotants
-    unsigned Compteur = 0;
+    unsigned compteur = 0;
     unsigned nombreRegion = 0;
     unsigned nombreDeleguesRegion = 0;
     unsigned nombreCandidatsNationaux;
@@ -57,7 +57,7 @@ int main() {
     map<int,int> nombreVotesBlancParRegions;
 
     for (unsigned i = 0; i < nombreRegion; i++) {
-        Compteur = 0;
+        compteur = 0;
         map<int,int> nombreVotantsRegionaux;
         nombreDeVotants = rand()%15;
         nombreVotantsRegionaux[i] = nombreDeVotants;
@@ -71,7 +71,7 @@ int main() {
                 candidatsEtats[i][prenom] = 0;
             }
         }
-        while (Compteur < nombreVotantsRegionaux[i]) {
+        while (compteur < nombreVotantsRegionaux[i]) {
             cout << "La liste des candidats est : " << endl;
             for (const auto& votant : candidatsEtats) {
                 int idx = 1;  // Correction d'affichage manquée.
@@ -83,7 +83,7 @@ int main() {
             cout << "Entrez le nom du candidat : ";
             cin >> saisiNomCandidat;
             cout << endl;
-            Compteur++;
+            compteur++;
             if (candidatsEtats[i].find(saisiNomCandidat) != candidatsEtats[i].end()) {
                 candidatsEtats[i][saisiNomCandidat] += 1;
             } else {
@@ -104,8 +104,10 @@ int main() {
         dicoDeleguesParRegions[i] = liste_candidats[0].first;
     }
 
-    map<string, int> candidatsNationaux;
-    // Générer les délégués de manière unique
+    cout << "Combien il y a de candidats Nationaux ? " << endl;
+    cin >> nombreCandidatsNationaux;
+    map<string, int> candidatsNationaux = map<string, int>();
+
     for (unsigned j = 0; j < nombreCandidatsNationaux; j++) {
         nomAuHasard = rand() % prenoms.size();
         auto prenom = prenoms[nomAuHasard];
@@ -119,13 +121,9 @@ int main() {
     while (compteur2 < nombreRegion) {
         // ANNONCE DES CANDIDATS NATIONAUX
 
-        cout << "La liste des candidats est : " << endl;
-        for (const auto& votant : candidatsNationaux) {
-            int idx = 1;  // Correction d'affichage manquée.
-            for (const auto& pair : votant.second) {
-                cout << idx << ". " << pair.first << endl;
-                idx++;
-            }
+        cout << "La liste des candidats est : " << candidatsNationaux.size() << endl;
+        for (const auto& votantNational : candidatsNationaux) {
+            cout << "La liste des candidats est : " << votantNational.first << endl ;
         }
         cout << "Entrez le nom du candidat : ";
         cin >> saisiNomCandidat;
