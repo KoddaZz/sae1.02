@@ -2,6 +2,13 @@
 #include <vector>
 #include <string>
 using namespace std;
+/*void majorité(const vector<int>& compte){
+    for (unsigned i = 0;i < compte.size();++i)
+    {
+        if compte[i]>
+    }
+}
+*/
 void decompte(const vector<vector<int>>& votes, const vector<string>& candidats) {
     // Initialiser un vecteur de compteurs pour chaque candidat
     vector<int> compte(candidats.size(), 0);
@@ -34,11 +41,8 @@ void afficherVotes(const vector<string>& candidats, const vector<vector<int>>& v
         cout << "\n";
     }
 }
-void vote_alternatif_test()
-{
+vector<string> candidats(){
     vector <string> candidats;
-    vector <vector<int>> votes;
-
     unsigned numCandidats;
     cout << "Entrez le nombre de candidats: ";
     cin >> numCandidats;
@@ -48,13 +52,17 @@ void vote_alternatif_test()
         cout << "Candidats " << i+1 <<": ";
         cin >> candidats[i];
     }
-
+    return candidats;
+}
+vector<vector<int>> vote_alternatif_test(const vector<string>& candidats)
+{
+    vector <vector<int>> votes;
     unsigned votant;
     cout << "Veuillez saisir le nombre de votant: ";
     cin >> votant;
     votes.resize(votant, vector<int>(numCandidats));
 
-    cout << "Entrez les votes (par exemple 1 2 3 pour preferer le candidat 1 puis le 2 puis le 3 dans un vote à quatre candidats";
+    cout << "Entrez les votes (par exemple 1 2 3 pour preferer le candidat 1 puis le 2 puis le 3 dans un vote à trois candidats"<<endl;
     for (unsigned i=0;i<votant;++i)
     {
         cout << "Vote " << i+1<< ": ";
@@ -65,8 +73,8 @@ void vote_alternatif_test()
             votes[i][j]=preference-1;
         }
     }
-    afficherVotes(candidats, votes);
-    decompte(votes,candidats);
+    return votes;
+
 }
 
 
@@ -78,6 +86,9 @@ en fonction des premières préférences : si un candidat réunit une majorité 
 */
 int main()
 {
-    vote_alternatif_test();
+    candidats();
+    vote_alternatif_test(candidats);
+    afficherVotes(candidats, votes);
+    decompte(votes,candidats);
     return 0;
 }
