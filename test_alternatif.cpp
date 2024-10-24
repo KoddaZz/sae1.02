@@ -86,6 +86,15 @@ en fonction des premières préférences : si un candidat réunit une majorité 
 éliminé et ses bulletins sont répartis entre les autres candidats suivant les
  secondes préférences desdits bulletins.
 */
+bool majorite(const vector& compte, const int& numVotes)
+{
+    for (unsigned i = 0;i < compte.size();++i)
+    {
+        if compte[i]>numVotes
+            return true;
+        else
+            return false;
+}
 string main()
 {
     vector<string> candidat;
@@ -95,13 +104,11 @@ string main()
     afficherVotes(candidat, votes);
     vector<int> compte
     int numVotes;
-    compte=decompte(votes,candidat);
-    for (unsigned i = 0;i < compte.size();++i)
+    compte=decompte(votes,candidat);    
+    while(!majorite(compte,numVotes))
     {
-        if compte[i]>numVotes{
-            return candidat[i];
-        }
-    
+        
     }
+    
     return 0;
 }
