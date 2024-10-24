@@ -13,28 +13,12 @@ Authors : GHEUX Théo
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
+#include <iomanip>  // afin d'utiliser quoted()
 using namespace std;
 
 int main() {
-    srand(static_cast<unsigned int>(time(0))); // Correction pour adapter à type sécurisé
+    srand(static_cast<unsigned int>(time(0)));
     // Mise en place du dictionnaire répertoriant les candidats
-    vector<string> prenoms = {
-        "James", "Emily", "Michael", "Sarah", "William", "Jessica", "Robert", "Ashley", "John", "Jennifer",
-        "David", "Amanda", "Richard", "Brittany", "Joseph", "Samantha", "Charles", "Lauren", "Thomas", "Megan",
-        "Christopher", "Hannah", "Daniel", "Victoria", "Matthew", "Kayla", "Anthony", "Alexis", "Donald", "Rachel",
-        "Mark", "Madison", "Paul", "Natalie", "Steven", "Alyssa", "Andrew", "Grace", "Joshua", "Olivia",
-        "Brian", "Sophia", "Kevin", "Chloe", "George", "Isabella", "Edward", "Emma", "Ronald", "Ava",
-        "Timothy", "Mia", "Kenneth", "Abigail", "Jason", "Emily", "Eric", "Ella", "Jeffrey", "Madeline",
-        "Ryan", "Addison", "Jacob", "Hailey", "Nicholas", "Charlotte", "Stephen", "Harper", "Frank", "Lily",
-        "Patrick", "Brooklyn", "Scott", "Layla", "Justin", "Zoe", "Larry", "Penelope", "Brandon", "Scarlett",
-        "Benjamin", "Stella", "Samuel", "Nora", "Gregory", "Eleanor", "Alexander", "Violet", "Henry", "Ellie",
-        "Jonathan", "Sophie", "Ethan", "Mila", "Jack", "Aria", "Peter", "Lillian", "Aaron", "Avery",
-        "Adam", "Audrey", "Sean", "Savannah", "Austin", "Lucy", "Kyle", "Paisley", "Jesse", "Evelyn",
-        "Raymond", "Bella", "Philip", "Hazel", "Carl", "Claire", "Arthur", "Skylar", "Dennis", "Caroline",
-        "Walter", "Anna", "Jerry", "Samantha", "Bruce", "Autumn", "Lawrence", "Kennedy", "Wayne", "Madelyn",
-        "Alan", "Ariana", "Roger", "Elliana", "Terry", "Genesis", "Harold", "Gianna", "Gerald", "Serenity",
-        "Henry", "Ruby", "Louis", "Cora", "Joe", "Emilia", "Howard", "Peyton", "Billy", "Rylee"
-    };
 
 
     cout << "Bienvenue sur une simulation d'un vote !" << endl;
@@ -43,11 +27,11 @@ int main() {
     unsigned nombreRegion = 0;
     unsigned nombreDeleguesRegion = 0;
     unsigned nombreCandidatsNationaux;
-    unsigned nomAuHasard = 0;
-    string saisiNomCandidat = " ";
+    string enregistrementNomCandidat = " ";
+    string saisiNomCandidatVote = " ";
     cout << "Combien d'Etats / region voulez vous simuler ? ";
     cin >> nombreRegion;
-    cout << "Combien de candidat Delegues voulez vous par région ? ";
+    cout << "Combien de candidat Delegues voulez vous par region ? ";
     cin >> nombreDeleguesRegion;
     unsigned compteur2 = 0;
     unsigned nombreVoteBlancNational;
@@ -59,17 +43,18 @@ int main() {
     for (unsigned i = 0; i < nombreRegion; i++) {
         compteur = 0;
         map<int,int> nombreVotantsRegionaux;
-        nombreDeVotants = rand()%15;
+        cout << "Entrez le nombre de votants :";
+        cin >> nombreDeVotants;
         nombreVotantsRegionaux[i] = nombreDeVotants;
 
         map<int, map<string, int>> candidatsEtats;
         // Générer les délégués de manière unique
         for (unsigned j = 0; j < nombreDeleguesRegion; j++) {
-            nomAuHasard = rand() % prenoms.size();
-            auto prenom = prenoms[nomAuHasard];
-            if (candidatsEtats[i].find(prenom) == candidatsEtats[i].end()) {
-                candidatsEtats[i][prenom] = 0;
-            }
+            // AJOUT D'UN MODE ADMIN ?
+            // Si admin = True
+            cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
+            cin >> quoted(enregistrementNomCandidat);
+            candidatsEtats[i][enregistrementNomCandidat] = 0;
         }
         while (compteur < nombreVotantsRegionaux[i]) {
             cout << "La liste des candidats est : " << endl;
@@ -81,11 +66,11 @@ int main() {
                 }
             }
             cout << "Entrez le nom du candidat : ";
-            cin >> saisiNomCandidat;
+            cin >> quoted(saisiNomCandidatVote);
             cout << endl;
             compteur++;
-            if (candidatsEtats[i].find(saisiNomCandidat) != candidatsEtats[i].end()) {
-                candidatsEtats[i][saisiNomCandidat] += 1;
+            if (candidatsEtats[i].find(saisiNomCandidatVote) != candidatsEtats[i].end()) {
+                candidatsEtats[i][saisiNomCandidatVote ] += 1;
             } else {
                 nombreVotesBlancParRegions[i]++;
             }
@@ -109,11 +94,11 @@ int main() {
     map<string, int> candidatsNationaux = map<string, int>();
 
     for (unsigned j = 0; j < nombreCandidatsNationaux; j++) {
-        nomAuHasard = rand() % prenoms.size();
-        auto prenom = prenoms[nomAuHasard];
-        if (candidatsNationaux.find(prenom) == candidatsNationaux.end()) {
-            candidatsNationaux[prenom] = 0;
-        }
+        // AJOUT D'UN MODE ADMINISTRATEUR ?
+        // if admin = True ?
+        cout << "Enregistrez les noms des candidats afin de débuter le vote des nationaux : " << endl;
+        cin >> quoted(enregistrementNomCandidat);
+        candidatsNationaux[enregistrementNomCandidat] = 0;
     }
 
     cout << " " << endl << " ===================== [ NATIONAL ] ===================== " << endl << "      VOTE CANDIDAT NATIONAL     " << endl << " ===================== [ NATIONAL ] ===================== " << endl << " " << endl;
@@ -126,12 +111,12 @@ int main() {
             cout << "La liste des candidats est : " << votantNational.first << endl ;
         }
         cout << "Entrez le nom du candidat : ";
-        cin >> saisiNomCandidat;
+        cin >> quoted(saisiNomCandidatVote);
         cout << endl;
         compteur2++;
 
-        if (candidatsNationaux.find(saisiNomCandidat) != candidatsNationaux.end()) {
-            candidatsNationaux[saisiNomCandidat] += 1;
+        if (candidatsNationaux.find(saisiNomCandidatVote) != candidatsNationaux.end()) {
+            candidatsNationaux[saisiNomCandidatVote] += 1;
         } else {
             ++nombreCandidatsNationaux;
         }
