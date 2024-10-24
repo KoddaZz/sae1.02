@@ -56,6 +56,8 @@ vector<string> candidats(){
 }
 vector<vector<int>> vote_alternatif_test(const vector<string>& candidats)
 {
+    unsigned numCandidats;
+    numCandidats=candidats.size();
     vector <vector<int>> votes;
     unsigned votant;
     cout << "Veuillez saisir le nombre de votant: ";
@@ -86,8 +88,10 @@ en fonction des premières préférences : si un candidat réunit une majorité 
 */
 int main()
 {
-    candidats();
-    vote_alternatif_test(candidats);
+    vector<string> candidat;
+    vector<vector<int>> votes;
+    candidat=candidats();
+    votes=vote_alternatif_test(candidat);
     afficherVotes(candidats, votes);
     decompte(votes,candidats);
     return 0;
