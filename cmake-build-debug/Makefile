@@ -128,29 +128,29 @@ sae1_02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/build
 .PHONY : sae1_02/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+new_main.obj: new_main.cpp.obj
+.PHONY : new_main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+new_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/new_main.cpp.obj
+.PHONY : new_main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+new_main.i: new_main.cpp.i
+.PHONY : new_main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/main.cpp.i
-.PHONY : main.cpp.i
+new_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/new_main.cpp.i
+.PHONY : new_main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+new_main.s: new_main.cpp.s
+.PHONY : new_main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/main.cpp.s
-.PHONY : main.cpp.s
+new_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/new_main.cpp.s
+.PHONY : new_main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... sae1_02
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... new_main.obj
+	@echo ... new_main.i
+	@echo ... new_main.s
 .PHONY : help
 
 

@@ -4,4 +4,4 @@ project(sae1_02)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(sae1_02
-    main.cpp)
+    new_main.cpp)
