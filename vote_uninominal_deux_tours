@@ -259,3 +259,35 @@ int main()
     }
 }
 
+/* JEUX 1
+ * Saisir le nombre de candidats : 5
+ * Saisir le nom du premier candidat : Ewan
+ * Saisir le nom du 2eme candidat : Théo
+ * Saisir le nom du 3eme candidat : Alexis
+ * Saisir le nom du 4eme candidat : Jules
+ * Saisir le nom du 5eme candidat : Ali
+ * Saisir le nombre de voix qu'a obtenu Ewan : 4
+ * Saisir le nombre de voix qu'a obtenu Théo : 5
+ * Saisir le nombre de voix qu'a obtenu Alexis : 6
+ * Saisir le nombre de voix qu'a obtenu Jules : 2
+ * Saisir le nombre de voix qu'a obtenu Ali : 19
+ * Ali a obtenue une majorité absolue avec 19 voix et remporte donc le vote.
+ *
+ * JEUX 2
+ * Saisir le nombre de candidats : 4
+ * Saisir le nom du premier candidat : Football
+ * Saisir le nom du 2eme candidat : Handball
+ * Saisir le nom du 3eme candidat : Volleyball
+ * Saisir le nom du 4eme candidat : Basketball
+ * Saisir le nombre de voix qu'a obtenu Football : 32
+ * Saisir le nombre de voix qu'a obtenu Handball : 21
+ * Saisir le nombre de voix qu'a obtenu Volleyball : 34
+ * Saisir le nombre de voix qu'a obtenu Basketball : 27
+ * Il n'y a pas de majorité absolue. Nous allons donc effectuer un second tour.
+ * Saisir le nombre de voix qu'a obtenu Volleyball : 57
+ * Saisir le nombre de voix qu'a obtenu Football : 57
+ * Il y'a égalite entre les deux candidats du second tour car ils ont tous les deux obtenu 57 votes.
+ * Le gagnat est dont le candidat qui a obtenu le plus de voix au premier tour.
+ * Au premier tour, Volleyball a obtenu 34 voix tandis que Football a obtenu 32 voix.
+ * C'est donc Volleyball qui remporte le vote !
+ */
