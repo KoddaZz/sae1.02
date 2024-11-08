@@ -1,0 +1,29 @@
+Cas de non majorité
+
+5
+Cholat
+Fraise
+Vanille
+Mangue
+Passion
+5
+1 2 3 4 5
+2 3 4 5 1
+3 4 5 1 2
+4 5 2 1 3
+5 4 3 2 1
+
+Cas de majorité
+
+5
+Chocolat
+Fraise
+Vanille
+Mangue
+Passion
+5
+1 2 3 4 5
+2 3 4 5 1
+3 4 5 1 2
+4 5 2 1 3
+5 4 3 2 1
