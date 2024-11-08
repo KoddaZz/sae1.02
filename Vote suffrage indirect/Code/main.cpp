@@ -126,8 +126,8 @@ int main() {
     while (compteur2 < nombreRegion) {
         // ANNONCE DE LA LISTE DES CANDIDATS NATIONAUX
 
-        cout << "La liste des candidats est : " << candidatsNationaux.size() << endl;
-        for (const auto& votantNational : candidatsNationaux) {
+        //cout << "La liste des candidats est : " << candidatsNationaux.size() << endl;
+        for (const pair<const string, int>& votantNational : candidatsNationaux) {
             cout << "La liste des candidats est : " << votantNational.first << endl ;
         }
         cout << "Entrez le nom du candidat : ";
