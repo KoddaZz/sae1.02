@@ -1,9 +1,9 @@
 /*
 Authors : GHEUX Théo
-             FABRE Alexis
-             FUSELIER Jules
-             ACEMYAN DE OLIVEIRA Ewan
-             UYSUN Ali
+          FABRE Alexis
+          FUSELIER Jules
+          ACEMYAN DE OLIVEIRA Ewan
+          UYSUN Ali
 */
 // Importation des bibliothèques nécessaires
 #include <iostream>
@@ -34,8 +34,8 @@ int main() {
     unsigned nombreDeleguesRegion = 0; // Nombre de candidats delegues ( à définir spécialement pour chaque région )
     unsigned nombreCandidatsNationaux; // Nombre de candidats qui se présentent à la nationale
     string enregistrementNomCandidat = " "; // => servira pour enregistrer les noms des candidats à chaque fois ( delegues / national )
-    string saisiNomCandidatVote = " "; // Ce que le vote va rentrer ( Pour qui il va voter )
-    cout << "Combien d'Etats / region voulez vous simuler ( Le nombre ( entier ) de regions dans leqsquelles vous voulez simuler un vote ) ? ";
+    string saisieNomCandidatVote = " "; // Ce que le vote va rentrer ( Pour qui il va voter )
+    cout << "Combien de region(s) voulez vous simuler ( Le nombre ( entier ) de regions dans leqsquelles vous voulez simuler un vote ) ? ";
     cin >> nombreRegion;
     unsigned compteur2 = 0;
     unsigned nombreVoteBlancNational;
@@ -51,8 +51,8 @@ int main() {
         cin >> nombreDeVotants; // Entrée d'un entier
         nombreVotantsRegionaux[i] = nombreDeVotants; // Pour chaque région on aura le nombre de votants
 
-        map<int, map<string, int>> candidatsEtats;
-        // Création d'un dictionnaire pour enregistrer :
+        map<int, map<string, int>> DeleguesRegion;
+        // Création d'un dictionnaire de dictonnaire pour enregistrer :
         //  - le nom des délégués selon la région
         //  - le nombre de voix qu'ils ont reçu
 
@@ -61,9 +61,11 @@ int main() {
             // Si admin = True
             cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
             cin >> quoted(enregistrementNomCandidat);
-            candidatsEtats[i][enregistrementNomCandidat] = 0;
+            DeleguesRegion[i][enregistrementNomCandidat] = 0;
         }
         */
+        cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
+        cin >> nombreDeleguesRegion; // Saisie du nombre (entier) de Délégués
         while (compteur < nombreVotantsRegionaux[i]) { // Simulation du vote pour chaque région
 
             cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
@@ -73,10 +75,10 @@ int main() {
                 // Si admin = True
                 cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
                 cin >> quoted(enregistrementNomCandidat); // Saisir le nom du candidat afin de l'inscrire sur les listes ( EX ENTREE : "FUSELIER Jules" )
-                candidatsEtats[i][enregistrementNomCandidat] = 0; // Initialiser le nombre de voix à 0 selon le nom du candidat
+                DeleguesRegion[i][enregistrementNomCandidat] = 0; // Initialiser le nombre de voix à 0 selon le nom du candidat
             } // TO DO : FAIRE QUE L'ON NE PEUT PAS ENREGISTRER 2 FOIS LA MÊME PERSONNE ( rajouter un if ? )
             cout << "La liste des candidats est : " << endl;
-            for (const auto& votant : candidatsEtats) { // BOUCLE SERVANT A AFFICHER LES CANDIDATS POUR LESQUELS ON PEUT VOTER
+            for (const auto& votant : DeleguesRegion) { // BOUCLE SERVANT A AFFICHER LES CANDIDATS POUR LESQUELS ON PEUT VOTER
                 int idx = 1;
                 for (const auto& pair : votant.second) {
                     cout << idx << ". " << pair.first << endl;
@@ -84,17 +86,17 @@ int main() {
                 }
             }
             cout << "Entrez le nom du candidat : "; // Saisie du nom du candidat par le votant
-            cin >> quoted(saisiNomCandidatVote); // EX ENTREE = "Théo Gheux
+            cin >> quoted(saisieNomCandidatVote); // EX ENTREE = "Théo Gheux
             cout << endl;
             compteur++; // Incrémentation du compteur afin de pas créer une boucle infinie ( while ) [ A MIEUX EXPLIQUER ]
-            if (candidatsEtats[i].find(saisiNomCandidatVote) != candidatsEtats[i].end()) { // VERIF si le candidat pour lequel on a voté existe
-                candidatsEtats[i][saisiNomCandidatVote ] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
+            if (DeleguesRegion[i].find(saisieNomCandidatVote) != DeleguesRegion[i].end()) { // VERIF si le candidat pour lequel on a voté existe
+                DeleguesRegion[i][saisieNomCandidatVote ] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
             } else {
                 nombreVotesBlancParRegions[i]++; // SI NON, cela augmente le nombre de vote blancs selon la région ( un compteur / région )
             }
         }
         // Creation d'un tableau afin de créer une liste triée des candidats
-        vector<pair<string, int>> liste_candidats(candidatsEtats[i].begin(), candidatsEtats[i].end());
+        vector<pair<string, int>> liste_candidats(DeleguesRegion[i].begin(), DeleguesRegion[i].end());
         // Trier les candidats par nombre de votes (ordre décroissant)
         sort(liste_candidats.begin(), liste_candidats.end(), [](const pair<string, int>& a, const pair<string, int>& b) {
             return a.second > b.second;
@@ -131,12 +133,12 @@ int main() {
             cout << "La liste des candidats est : " << votantNational.first << endl ;
         }
         cout << "Entrez le nom du candidat : ";
-        cin >> quoted(saisiNomCandidatVote); // [ Votant ] => Saisir le nom d'un candidat comme le modèle suivant : "FABRE Alexis" [ ! ] Guillemets importants !
+        cin >> quoted(saisieNomCandidatVote); // [ Votant ] => Saisir le nom d'un candidat comme le modèle suivant : "FABRE Alexis" [ ! ] Guillemets importants !
         cout << endl;
         compteur2++;
 
-        if (candidatsNationaux.find(saisiNomCandidatVote) != candidatsNationaux.end()) { // VERIF si le candidat pour lequel on a voté existe
-            candidatsNationaux[saisiNomCandidatVote] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
+        if (candidatsNationaux.find(saisieNomCandidatVote) != candidatsNationaux.end()) { // VERIF si le candidat pour lequel on a voté existe
+            candidatsNationaux[saisieNomCandidatVote] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
         } else {
             ++nombreVoteBlancNational; // SI NON, cela augmente le nombre de vote blanc
         }
