@@ -64,6 +64,8 @@ int main() {
             DeleguesRegion[i][enregistrementNomCandidat] = 0;
         }
         */
+        cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
+        cin >> nombreDeleguesRegion; // Saisie du nombre (entier) de Délégués
         while (compteur < nombreVotantsRegionaux[i]) { // Simulation du vote pour chaque région
 
             cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";

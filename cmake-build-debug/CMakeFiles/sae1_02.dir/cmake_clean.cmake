@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sae1_02.dir/new_main.cpp.obj"
-  "CMakeFiles/sae1_02.dir/new_main.cpp.obj.d"
+  "CMakeFiles/sae1_02.dir/main.cpp.obj"
+  "CMakeFiles/sae1_02.dir/main.cpp.obj.d"
   "libsae1_02.dll.a"
   "sae1_02.exe"
   "sae1_02.exe.manifest"
