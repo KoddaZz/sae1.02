@@ -66,17 +66,15 @@ int main() {
         */
         cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
         cin >> nombreDeleguesRegion; // Saisie du nombre (entier) de Délégués
+        for (unsigned j = 0; j < nombreDeleguesRegion; j++) { // BOUCLE => Enregistrer les noms de tout les candidats pour chaque régions
+            // AJOUT D'UN MODE ADMIN ?
+            // Si admin = True
+            cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
+            cin >> quoted(enregistrementNomCandidat); // Saisir le nom du candidat afin de l'inscrire sur les listes ( EX ENTREE : "FUSELIER Jules" )
+            DeleguesRegion[i][enregistrementNomCandidat] = 0; // Initialiser le nombre de voix à 0 selon le nom du candidat
+        } // TO DO : FAIRE QUE L'ON NE PEUT PAS ENREGISTRER 2 FOIS LA MÊME PERSONNE ( rajouter un if ? )
         while (compteur < nombreVotantsRegionaux[i]) { // Simulation du vote pour chaque région
 
-            cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
-            cin >> nombreDeleguesRegion; // Saisie du nombre (entier) de Délégués
-            for (unsigned j = 0; j < nombreDeleguesRegion; j++) { // BOUCLE => Enregistrer les noms de tout les candidats pour chaque régions
-                // AJOUT D'UN MODE ADMIN ?
-                // Si admin = True
-                cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
-                cin >> quoted(enregistrementNomCandidat); // Saisir le nom du candidat afin de l'inscrire sur les listes ( EX ENTREE : "FUSELIER Jules" )
-                DeleguesRegion[i][enregistrementNomCandidat] = 0; // Initialiser le nombre de voix à 0 selon le nom du candidat
-            } // TO DO : FAIRE QUE L'ON NE PEUT PAS ENREGISTRER 2 FOIS LA MÊME PERSONNE ( rajouter un if ? )
             cout << "La liste des candidats est : " << endl;
             for (const auto& votant : DeleguesRegion) { // BOUCLE SERVANT A AFFICHER LES CANDIDATS POUR LESQUELS ON PEUT VOTER
                 int idx = 1;
@@ -88,11 +86,11 @@ int main() {
             cout << "Entrez le nom du candidat : "; // Saisie du nom du candidat par le votant
             cin >> quoted(saisieNomCandidatVote); // EX ENTREE = "Théo Gheux
             cout << endl;
-            compteur++; // Incrémentation du compteur afin de pas créer une boucle infinie ( while ) [ A MIEUX EXPLIQUER ]
+            ++compteur; // Incrémentation du compteur afin de pas créer une boucle infinie ( while ) [ A MIEUX EXPLIQUER ]
             if (DeleguesRegion[i].find(saisieNomCandidatVote) != DeleguesRegion[i].end()) { // VERIF si le candidat pour lequel on a voté existe
-                DeleguesRegion[i][saisieNomCandidatVote ] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
+                ++DeleguesRegion[i][saisieNomCandidatVote ]; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
             } else {
-                nombreVotesBlancParRegions[i]++; // SI NON, cela augmente le nombre de vote blancs selon la région ( un compteur / région )
+                ++nombreVotesBlancParRegions[i]; // SI NON, cela augmente le nombre de vote blancs selon la région ( un compteur / région )
             }
         }
         // Creation d'un tableau afin de créer une liste triée des candidats
