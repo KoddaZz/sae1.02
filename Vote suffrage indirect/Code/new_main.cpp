@@ -32,6 +32,7 @@ void messageLancement() {
 
 void scrutinElection (){
 
+
 }
 
 int main() {
