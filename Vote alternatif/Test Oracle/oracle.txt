@@ -1,0 +1,47 @@
+Entrez le nombre de candidats: 5
+Candidat 1: Chocolat
+Candidat 2: Fraise
+Candidat 3: Vanille
+Candidat 4: Mangue
+Candidat 5: Passion
+Veuillez saisir le nombre de votants: 5
+Entrez les votes (par exemple 1 2 3 pour préférer le candidat 1 puis le 2 puis le 3 dans un vote à trois candidats)
+Vote 1: 1 2 3 4 5
+Vote 2: 2 3 4 5 1
+Vote 3: 3 4 5 1 2
+Vote 4: 4 5 2 1 3
+Vote 5: 5 4 3 2 1
+Liste des candidats :
+1: Chocolat
+2: Fraise
+3: Vanille
+4: Mangue
+5: Passion
+Liste des votes :
+Vote 1: 1 2 3 4 5 
+Vote 2: 2 3 4 5 1 
+Vote 3: 3 4 5 1 2 
+Vote 4: 4 5 2 1 3 
+Vote 5: 5 4 3 2 1 
+Les premiers votes sont : 
+Chocolat a obtenu 1 premier(s) vote(s).
+Fraise a obtenu 1 premier(s) vote(s).
+Vanille a obtenu 1 premier(s) vote(s).
+Mangue a obtenu 1 premier(s) vote(s).
+Passion a obtenu 1 premier(s) vote(s).
+Le candidat Chocolat est éliminé.
+Les premiers votes sont : 
+Fraise a obtenu 2 premier(s) vote(s).
+Vanille a obtenu 1 premier(s) vote(s).
+Mangue a obtenu 1 premier(s) vote(s).
+Passion a obtenu 1 premier(s) vote(s).
+Le candidat Vanille est éliminé.
+Les premiers votes sont : 
+Fraise a obtenu 2 premier(s) vote(s).
+Mangue a obtenu 2 premier(s) vote(s).
+Passion a obtenu 1 premier(s) vote(s).
+Le candidat Passion est éliminé.
+Les premiers votes sont : 
+Fraise a obtenu 2 premier(s) vote(s).
+Mangue a obtenu 3 premier(s) vote(s).
+Le gagnant est Mangue avec 3 votes.
