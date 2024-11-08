@@ -1,4 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\jules\OneDrive\Documents\PROJET\Programmation\PYTHON\sae1.02 -B C:\Users\jules\OneDrive\Documents\PROJET\Programmation\PYTHON\sae1.02\cmake-build-debug
--- Configuring done (0.2s)
+-- Configuring done (0.4s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/jules/OneDrive/Documents/PROJET/Programmation/PYTHON/sae1.02/cmake-build-debug

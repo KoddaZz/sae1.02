@@ -128,29 +128,29 @@ sae1_02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/build
 .PHONY : sae1_02/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+Vote_suffrage_indirect/Code/main.obj: Vote_suffrage_indirect/Code/main.cpp.obj
+.PHONY : Vote_suffrage_indirect/Code/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Vote_suffrage_indirect/Code/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.obj
+.PHONY : Vote_suffrage_indirect/Code/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+Vote_suffrage_indirect/Code/main.i: Vote_suffrage_indirect/Code/main.cpp.i
+.PHONY : Vote_suffrage_indirect/Code/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/main.cpp.i
-.PHONY : main.cpp.i
+Vote_suffrage_indirect/Code/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.i
+.PHONY : Vote_suffrage_indirect/Code/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Vote_suffrage_indirect/Code/main.s: Vote_suffrage_indirect/Code/main.cpp.s
+.PHONY : Vote_suffrage_indirect/Code/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/main.cpp.s
-.PHONY : main.cpp.s
+Vote_suffrage_indirect/Code/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sae1_02.dir\build.make CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.s
+.PHONY : Vote_suffrage_indirect/Code/main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... sae1_02
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Vote_suffrage_indirect/Code/main.obj
+	@echo ... Vote_suffrage_indirect/Code/main.i
+	@echo ... Vote_suffrage_indirect/Code/main.s
 .PHONY : help
 
 
