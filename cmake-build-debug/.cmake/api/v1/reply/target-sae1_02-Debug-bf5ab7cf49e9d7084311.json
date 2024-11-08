@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "sae1_02.exe"
-		},
-		{
-			"path" : "sae1_02.pdb"
+			"path" : "sae1_02"
 		}
 	],
 	"backtrace" : 1,
@@ -68,16 +65,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "sae1_02",
-	"nameOnDisk" : "sae1_02.exe",
+	"nameOnDisk" : "sae1_02",
 	"paths" : 
 	{
 		"build" : ".",

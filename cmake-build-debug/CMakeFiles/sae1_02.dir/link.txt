@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\sae1_02.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\sae1_02.dir/objects.a @CMakeFiles\sae1_02.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\sae1_02.dir/objects.a -Wl,--no-whole-archive -o sae1_02.exe -Wl,--out-implib,libsae1_02.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sae1_02.dir\linkLibs.rsp
+/usr/bin/c++ -g CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.o -o sae1_02
