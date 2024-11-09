@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.o"
-  "CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.o.d"
-  "sae1_02"
+  "CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.obj"
+  "CMakeFiles/sae1_02.dir/Vote_suffrage_indirect/Code/main.cpp.obj.d"
+  "libsae1_02.dll.a"
+  "sae1_02.exe"
+  "sae1_02.exe.manifest"
   "sae1_02.pdb"
 )
 

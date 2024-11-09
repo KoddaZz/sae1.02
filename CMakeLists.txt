@@ -4,4 +4,4 @@ project(sae1_02)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(sae1_02
-    "Vote suffrage indirect/Code/main.cpp")
+    Vote_suffrage_indirect/Code/main.cpp)
