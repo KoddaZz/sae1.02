@@ -44,7 +44,7 @@ int main() {
 
     map<int,int> nombreVotesBlancParRegions;
 
-    for (unsigned i = 0; i < nombreRegion; i++) {
+    for (unsigned i = 0; i < nombreRegion; ++i) {
         compteur = 0;
         map<int,int> nombreVotantsRegionaux; // Creation d'un dictionnaire pour enregistrer le nombre de votants par région
         cout << "Entrez le nombre de votants :";
@@ -56,7 +56,7 @@ int main() {
         //  - le nom des délégués selon la région
         //  - le nombre de voix qu'ils ont reçu
 
-        /*for (unsigned j = 0; j < nombreDeleguesRegion; j++) {
+        /*for (unsigned j = 0; j < nombreDeleguesRegion; ++j) {
             // AJOUT D'UN MODE ADMIN ?
             // Si admin = True
             cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
@@ -66,7 +66,7 @@ int main() {
         */
         cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
         cin >> nombreDeleguesRegion; // Saisie du nombre (entier) de Délégués
-        for (unsigned j = 0; j < nombreDeleguesRegion; j++) { // BOUCLE => Enregistrer les noms de tout les candidats pour chaque régions
+        for (unsigned j = 0; j < nombreDeleguesRegion; ++j) { // BOUCLE => Enregistrer les noms de tout les candidats pour chaque régions
             // AJOUT D'UN MODE ADMIN ?
             // Si admin = True
             cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
@@ -80,7 +80,7 @@ int main() {
                 int idx = 1;
                 for (const auto& pair : votant.second) {
                     cout << idx << ". " << pair.first << endl;
-                    idx++;
+                    ++idx;
                 }
             }
             cout << "Entrez le nom du candidat : "; // Saisie du nom du candidat par le votant
@@ -101,7 +101,7 @@ int main() {
         });
         // AFFICHAGE D'UN PODIUM ( modif à faire [i] ajouter un %
         cout << "Podium des candidats de la region " << i << " : " << endl;
-        for (unsigned int k = 0; k < 3 && k < liste_candidats.size(); k++) {
+        for (unsigned int k = 0; k < 3 && k < liste_candidats.size(); ++k) {
             cout << k+1 << ". " << liste_candidats[k].first << " avec " << liste_candidats[k].second << " vote(s)." << endl;
         }
         cout << "Nombre de votes blancs : " << nombreVotesBlancParRegions[i] << endl << " " << endl << " ===================== [ REGIONAL ] ===================== " << endl << "      NOUVEAU VOTE / NOUVELLE REGION      " << endl << " ===================== [ REGIONAL ] ===================== " << endl << " " << endl;
@@ -113,7 +113,7 @@ int main() {
     cin >> nombreCandidatsNationaux; // Saisir un entier
     map<string, int> candidatsNationaux = map<string, int>(); // Création du dictionnaire afin d'enregistrer le nombre de voix par candidat selon son nom ( clé )
 
-    for (unsigned j = 0; j < nombreCandidatsNationaux; j++) {  // BOUCLE => Enregistrer les noms des candidats à la national
+    for (unsigned j = 0; j < nombreCandidatsNationaux; ++j) {  // BOUCLE => Enregistrer les noms des candidats à la national
         // AJOUT D'UN MODE ADMINISTRATEUR ?
         // if admin = True ?
         cout << "Enregistrez les noms des candidats afin de débuter le vote des nationaux : " << endl;
@@ -133,7 +133,7 @@ int main() {
         cout << "Entrez le nom du candidat : ";
         cin >> quoted(saisieNomCandidatVote); // [ Votant ] => Saisir le nom d'un candidat comme le modèle suivant : "FABRE Alexis" [ ! ] Guillemets importants !
         cout << endl;
-        compteur2++;
+        ++compteur2;
 
         if (candidatsNationaux.find(saisieNomCandidatVote) != candidatsNationaux.end()) { // VERIF si le candidat pour lequel on a voté existe
             candidatsNationaux[saisieNomCandidatVote] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
@@ -150,7 +150,7 @@ int main() {
     });
     // Afficher le podium
     cout << "Podium des candidats : " << endl;
-    for (unsigned int i = 0; i < 3 && i < liste_candidats.size(); i++) {
+    for (unsigned int i = 0; i < 3 && i < liste_candidats.size(); ++i) {
         cout << i+1 << ". " << liste_candidats[i].first << " avec " << liste_candidats[i].second << " vote(s)." << endl;
     }
     cout << "Nombre de votes blancs : " << nombreVoteBlancNational << endl;
