@@ -17,7 +17,6 @@ Authors : GHEUX Théo
 using namespace std;
 
 int main() {
-    srand(static_cast<unsigned int>(time(0)));
     // Mise en place du dictionnaire répertoriant les candidats
     string nomExempleAEntrer = "'Roberto De Zerbi'";
 
@@ -38,7 +37,7 @@ int main() {
     cout << "Combien de region(s) voulez vous simuler ( Le nombre ( entier ) de regions dans leqsquelles vous voulez simuler un vote ) ? ";
     cin >> nombreRegion;
     unsigned compteur2 = 0;
-    unsigned nombreVoteBlancNational;
+    unsigned nombreVoteBlancNational = 0;
 
     map<int, string> dicoDeleguesParRegions;
 
@@ -76,23 +75,20 @@ int main() {
         } // TO DO : FAIRE QUE L'ON NE PEUT PAS ENREGISTRER 2 FOIS LA MÊME PERSONNE ( rajouter un if ? )
         while (compteur < nombreVotantsRegionaux[i]) { // Simulation du vote pour chaque région
 
-<<<<<<< Updated upstream:Vote_suffrage_indirect/Code/main.cpp
-=======
-            cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
-            //getline(cin, var);
-            cin >> quoted(enregistrementNomCandidat); // Saisir le nom du candidat afin de l'inscrire sur les listes ( EX ENTREE : "FUSELIER Jules" )
+            // cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
+            // //getline(cin, var);
+            // cin >> quoted(enregistrementNomCandidat); // Saisir le nom du candidat afin de l'inscrire sur les listes ( EX ENTREE : "FUSELIER Jules" )
 
             // cout << "Combien de candidat Delegues voulez vous dans la region numero " << i << " : ";
             // cin >> nombreDeleguesRegion; // Saisie du nombre (entier) de Délégués
-            for (unsigned j = 0; j < nombreDeleguesRegion; ++j) { // BOUCLE => Enregistrer les noms de tout les candidats pour chaque régions
+            //for (unsigned j = 0; j < nombreDeleguesRegion; ++j) { // BOUCLE => Enregistrer les noms de tout les candidats pour chaque régions
                 // AJOUT D'UN MODE ADMIN ?
                 // Si admin = True
                 // cout << "Enregistrez les noms des candidats afin de debuter le vote des regionaux : ";
                 // //getline(cin, var);
                 // cin >> quoted(enregistrementNomCandidat); // Saisir le nom du candidat afin de l'inscrire sur les listes ( EX ENTREE : "FUSELIER Jules" )
-                DeleguesRegion[i][enregistrementNomCandidat] = 0; // Initialiser le nombre de voix à 0 selon le nom du candidat
-            } // TO DO : FAIRE QUE L'ON NE PEUT PAS ENREGISTRER 2 FOIS LA MÊME PERSONNE ( rajouter un if ? )
->>>>>>> Stashed changes:Vote suffrage indirect/Code/main.cpp
+                // DeleguesRegion[i][enregistrementNomCandidat] = 0; // Initialiser le nombre de voix à 0 selon le nom du candidat
+            //} // TO DO : FAIRE QUE L'ON NE PEUT PAS ENREGISTRER 2 FOIS LA MÊME PERSONNE ( rajouter un if ? )
             cout << "La liste des candidats est : " << endl;
             for (const auto& votant : DeleguesRegion) { // BOUCLE SERVANT A AFFICHER LES CANDIDATS POUR LESQUELS ON PEUT VOTER
                 int idx = 1;
@@ -106,14 +102,9 @@ int main() {
             cout << endl;
             ++compteur; // Incrémentation du compteur afin de pas créer une boucle infinie ( while ) [ A MIEUX EXPLIQUER ]
             if (DeleguesRegion[i].find(saisieNomCandidatVote) != DeleguesRegion[i].end()) { // VERIF si le candidat pour lequel on a voté existe
-<<<<<<< Updated upstream:Vote_suffrage_indirect/Code/main.cpp
                 ++DeleguesRegion[i][saisieNomCandidatVote ]; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
-            } else {
-=======
-                DeleguesRegion[i][saisieNomCandidatVote ] += 1; // SI OUI, Cela augmente le nombre de voix qu'a obtenu le candidat de 1
             }
             else {
->>>>>>> Stashed changes:Vote suffrage indirect/Code/main.cpp
                 ++nombreVotesBlancParRegions[i]; // SI NON, cela augmente le nombre de vote blancs selon la région ( un compteur / région )
             }
         }
