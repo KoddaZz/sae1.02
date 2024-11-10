@@ -7,349 +7,348 @@ Fraises
 //et encore un autre commentaire
 AROUSSI BENTATA
 Adam
-1 4 3 2
+4 3 2 1
 ACEMYAN DE OLIVEIRA
 Ewan
-1 2 4 3
+2 1 4 3
 ACH                     
 Sofia
-1 2 4 3
+2 4 1 3
 AGGAB
 Mohammed
-1 2 4 3
+2 4 1 3
 AHAMED
 Nasser
-1 2 4 3
+2 1 3 4
 ALLARD
 Loan
-1 2 4 3
+1 4 3 2
 AMARA
 Sinda
-1 2 4 3
+1 4 2 3
 AMROUNE
 Akim
-1 2 4 3
+2 1 4 3
 ANTOINE
 Thomas
-1 2 4 3
+2 4 1 3
 ARBADJI
 Maxime
-1 2 4 3
+2 1 3 4
 ARBOUZ
 Iklil
-1 2 4 3
+2 1 3 4
 ARFI
 Maxime
-1 2 4 3
+2 1 4 3
 ARSENA
 Claire
-1 2 4 3
+2 1 3 4
 ATHERLY
 Evan
-1 2 4 3
+1 3 2 4
 AZOUG
 Kylian
-1 2 4 3
+1 4 2 3
 BAGNIS
 Enzo
-1 2 4 3
+2 1 4 3
 BARBERIS
 Alexis
-1 2 4 3
+4 2 1 3
 BAURENS - TORRENTE
 Valentin
-1 2 4 3
+3 4 2 1
 BEN GADHA
 Imen
-1 2 4 3
+1 3 4 2
 BEN SALEM
 Mohamed
-1 2 4 3
+2 1 3 4
 BENAHMED
 Younes
-1 2 4 3
+4 1 3 2
 BENHAFESSA
 Alexandre
-1 2 4 3
+3 4 1 2
 BILLUART
 Florian
-1 2 4 3
+4 3 2 1
 BORSOTTO
 Antonin
-1 2 4 3
+2 1 3 4
 BOUACHERIA-KEBIR
 Imed
-1 2 4 3
+4 2 1 3
 BOUDHIB          
 Mohamed-Amine
-1 2 4 3
+3 4 2 1
 BOUDIA--THOMAS
 Akcyl
-1 2 4 3
+4 2 3 1	
 BOUGHERARA
 Adam
-1 2 4 3
+2 3 1 4
 BREST-LESTRADE
 Hugo
-1 2 4 3
+1 4 3 2
 BURBECK
 Heather
-1 2 4 3
+4 3 2 1
 CANTOR
 Romain
-1 2 4 3
+1 3 4 2
 CELESTINE
 Samuel
-1 2 4 3
+3 4 2 1
 CHETIOUI
 Willem
-1 2 4 3
+4 3 1 2
 CLOT-GODARD
 Kenji
-1 2 4 3
+4 3 2 1
 CONTRUCCI     
 Lou
-1 2 4 3
+3 4 1 2
 CORDOVANA     
 Enzo
-1 2 4 3
+3 4 2 1
 COULPOTIN
 Evan
-1 2 4 3
+4 1 3 2
 CRESPO - MICHAILIDIS
 Dimitri
-1 2 4 3
+2 3 1 4
 CURNIER
 Anthony
-1 2 4 3
+1 4 2 3
 DAHMOUCHE
 Wissem
-1 2 4 3
+1 4 3 2
 DAOUAYRY
 Sofian
-1 2 4 3
+2 1 4 3
 DARGENTOLLE
 Francois
-1 2 4 3
+4 3 2 1
 DECAMPS
 Lou
-1 2 4 3
+3 2 1 4
 DEMANGE
 Martin
-1 2 4 3
+4 2 1 3
 DIAZ
 Gwenn
-1 2 4 3
+2 3 1 4
 DRIOUCHI
 Mohamed
-1 2 4 3
+4 1 2 3
 DUMONT
 Aline
-1 2 4 3
+1 4 2 3
 EDELSTEIN
 William
-1 2 4 3
+3 1 2 4
 EL FAHSSI
 Hicham
-1 2 4 3
+4 1 3 2
 EL HABRIRI
 Samy
-1 2 4 3
+1 3 2 4
 EL KASSOUF
 Simon
-1 2 4 3
+3 1 2 4
 FABRE
 Alexis
-1 2 4 3
+1 3 2 4
 FALFERI
 Angelo
-1 2 4 3
+4 3 1 2
 FAUTSCH          
 Mathis
-1 2 4 3
+3 1 2 4
 FERRAT
 Jibril
-1 2 4 3
+3 1 4 2
 FUSELIER
 Jules
-1 2 4 3
+3 1 4 2
 GHEUX
 Theo
-1 2 4 3
+1 4 2 3
 GIUSIANO
 Eloise
-1 2 4 3
+2 3 4 1
 GRIGUER
 Nathan
-1 2 4 3
+4 1 2 3
 GUDENSCHWAGER
 Oliver
-1 2 4 3
+3 4 2 1
 GUL
 Furkan
-1 2 4 3
+1 3 4 2
 GUZELBABA
 Imran
-1 2 4 3
+4 1 3 2
 HADDAD
 Mohamed-Amine
-1 2 4 3
+4 1 2 3
 HELALI
 Amin
-1 2 4 3
+2 4 1 3
 HENG
 Hugo
-1 2 4 3
+3 4 1 2
 HERNANDEZ
 Loic
-1 2 4 3
+4 2 1 3
 HU
 Swan
-1 2 4 3
+3 2 1 4
 JACOB
 Alexandre
-1 2 4 3
-KAMARA
+3 2 4 1
 Demba
 1 2 4 3
 KAMARZINE
 Aurelien
-1 2 4 3
+2 4 1 3
 KOLIAI
 Hamza
-1 2 4 3
+1 3 2 4
 KUROPATWA-BUTTE  
 Adam
-1 2 4 3
+1 2 3 4
 LACORRE
 Axel
-1 2 4 3
+2 3 1 4
 LAURIOL-TORCQ
 Mathis
-1 2 4 3
+1 4 3 2
 LE DENMAT
 Pierre
-1 2 4 3
+1 4 3 2
 LEPAPE
 Lucas
-1 2 4 3
+4 2 3 1
 MAILHE      
 Gustin
-1 2 4 3
+2 1 4 3
 MARCHITTO
 Ilian
-1 2 4 3
+1 3 2 4
 MARCUS
 William
 1 2 4 3
 MEFTAHI
 Mohamed
-1 2 4 3
+1 3 2 4
 MEGNOUCHE
 Riad
-1 2 4 3
+2 4 1 3
 MEJEAN
 Oriane
-1 2 4 3
+2 1 3 4
 MEKIDICHE         
 Idris
-1 2 4 3
+1 3 4 2
 NAHI
 Amine
-1 2 4 3
+2 3 4 1
 NEIRA
 Leandro
-1 2 4 3
+2 4 3 1
 NEPOTU
 Gheorghe
-1 2 4 3
+3 2 1 4
 NGOM
 Magueye
-1 2 4 3
+3 4 2 1
 NOIRET
 Maxime
-1 2 4 3
+2 1 4 3
 ORLANDI
 Lenny
-1 2 4 3
+3 1 4 2
 PANAIVA
 Jeremy
-1 2 4 3
+2 4 1 3
 PALOT
 Thomas
-1 2 4 3
+2 3 4 1
 PIBOULEAU
 Jean-Baptiste
-1 2 4 3
+4 2 1 3
 POGHOSSIAN
 Mariam
-1 2 4 3
+1 3 4 2
 QUILLIEC
 Matisse
-1 2 4 3
+3 1 4 2
 RADJOU
 Dinesh
-1 2 4 3
+3 1 2 4
 RAPANAKIS-BOURG
 Marius
-1 2 4 3
+1 3 2 4
 RATIANANAHARY
 Karmen
-1 2 4 3
+2 3 1 4
 REGNIER
 Vassili
-1 2 4 3
+4 3 1 2
 RIBBE 
 Jules
-1 2 4 3
+4 3 2 1
 RINALDI
 Antoine
-1 2 4 3
+3 2 4 1
 RIVA KARAKA ABDEREMANE
 Imric
-1 2 4 3
+3 2 4 1
 ROFFIDAL
 Ambre
-1 2 4 3
+4 2 1 3
 ROMBI           
 Matis
-1 2 4 3
+2 1 3 4
 SAADI
 Ismail
-1 2 4 3
+1 4 3 2
 SANTOS JORGE
 Francisco
-1 2 4 3
+3 2 4 1
 SENE
 Pablo
-1 2 4 3
+2 3 4 1
 SISE
 Aboubakar
-1 2 4 3
+4 1 3 2
 STEFANOVITCH
 Ilann
-1 2 4 3
+3 1 4 2
 TAHA CHAOUI
 Amir
-1 2 4 3
+3 2 1 4
 TORCHIN
 Maxence
-1 2 4 3
+1 2 3 4
 TORO
 Esteban
-1 2 4 3
+1 3 4 2
 TRAIKIA
 Rayane
-1 2 4 3
+1 3 2 4
 UYSUN
 Ali
-1 2 4 3
+2 4 1 3
 VALETTE
 Lilian
-1 2 4 3
+4 3 2 1
 WATRIPONT
 Jeremy 
-1 2 4 3
+2 1 4 3
 ZEGGANE 
 Sofien
-1 2 4 3
+2 1 4 3
