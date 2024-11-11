@@ -95,13 +95,12 @@ int main() {
 
     cin.ignore();
 
-    cout << "Combien de votants y a t-il pour le vote régional ? ";
-    cin >> nombreDeVotantsRegional;
-
-    cin.ignore();
-
     for (unsigned i = 0; i < nombreDeRegions; ++i) {
 
+        cout << "Combien de votants y a t-il pour le vote régional ? ";
+        cin >> nombreDeVotantsRegional;
+
+        cin.ignore();
 
         int nombreDeCandidatsVoteRegional = saisieNombreDeCandidats();
         repertoireCandidats(DeleguesRegion[i], nombreDeCandidatsVoteRegional);
