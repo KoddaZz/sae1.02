@@ -18,19 +18,27 @@ using namespace std;
 map<int, map<string, int>> DeleguesRegion;
 
 int NombreVotesBlanc = 0;
+int nombreDeRegions = 0;
+int compteurDelegues = 0;
 
 // Initialisation des map des Candidats Regionaux / Nationaux
-void initialiserCandidats(map<string, int> repertoireCandidats) {
+int saisieNombreDeCandidats() {
 
     int nombreDeCandidats = 0;
-    string saisieNomCandidat;
 
     cout << "Combien de candidats y a t-il ? ";
     cin >> nombreDeCandidats;
 
     cin.ignore();
 
-    for (unsigned int candidat = 0; candidat < nombreDeCandidats; ++candidat) {
+    return nombreDeCandidats;
+}
+
+void repertoireCandidats(map<string , int> & repertoireCandidats, int nbrCandidats){
+
+    string saisieNomCandidat;
+
+    for (unsigned int candidat = 0; candidat < nbrCandidats; ++candidat) {
 
         cout << "Initalisez le nom du candidat : ";
         getline(cin, saisieNomCandidat);
@@ -51,8 +59,9 @@ string saisieVoteDuVotant() {
     return saisieVote;
 }
 
+
 // FONCTION : Sert à vérifier si le nom du candidat existe, si non cela sera considéré comme un vote blanc
-void VerificationVoteBlanc(string NomCandidat, map<string, int>& NomCandidatMap) {
+void DepouillageVote(string NomCandidat, map<string, int>& NomCandidatMap) {
     if (NomCandidatMap.find(NomCandidat) != NomCandidatMap.end()) {
         ++NomCandidatMap[NomCandidat];
     } else {
@@ -60,13 +69,72 @@ void VerificationVoteBlanc(string NomCandidat, map<string, int>& NomCandidatMap)
     }
 }
 
+void rechercheGagnant(map<string, int>& NomCandidatMap){
+
+    string nomDuVainqueur;
+    int scoreMax = 0;
+
+    for (const auto & pair : NomCandidatMap) {
+        if (pair.second > scoreMax) {
+            scoreMax = pair.second;
+            nomDuVainqueur = pair.first;
+        }
+    }
+
+    cout << "Le Vainqueur de cette élection est : " << nomDuVainqueur << endl;
+
+}
+
 int main() {
-    initialiserCandidats(DeleguesRegion[1]); // LE "1" c'était juste pour test
 
-    string SaisieVote = saisieVoteDuVotant();
-    VerificationVoteBlanc(SaisieVote, DeleguesRegion[1]); // LE "1" c'était juste pour test
+    int compteurDelegues = 0;
+    int nombreDeVotantsRegional = 0;
 
-    cout << "Nombre de votes blancs : " << NombreVotesBlanc << endl;
+    cout << "Combien il y a t-il de région ? ";
+    cin >> nombreDeRegions;
 
-    return 0;
+    cin.ignore();
+
+    cout << "Combien de votants y a t-il pour le vote régional ? ";
+    cin >> nombreDeVotantsRegional;
+
+    cin.ignore();
+
+    for (unsigned i = 0; i < nombreDeRegions; ++i) {
+
+
+        int nombreDeCandidatsVoteRegional = saisieNombreDeCandidats();
+        repertoireCandidats(DeleguesRegion[i], nombreDeCandidatsVoteRegional);
+
+        while (compteurDelegues < nombreDeVotantsRegional) {
+          
+            string SaisieVote = saisieVoteDuVotant();
+            DepouillageVote(SaisieVote, DeleguesRegion[i]);
+            
+            ++compteurDelegues;
+        }
+
+    compteurDelegues = 0;
+    rechercheGagnant(DeleguesRegion[i]);
+
+    }
+
+    map<string, int> candidatsNationaux;
+
+    int nombreDeCandidatsVoteNational = saisieNombreDeCandidats();
+    repertoireCandidats(candidatsNationaux, nombreDeCandidatsVoteNational);
+
+    int compteurNational = 0;
+
+    while (compteurNational < nombreDeRegions) {
+
+        string SaisieVote = saisieVoteDuVotant();
+        DepouillageVote(SaisieVote, candidatsNationaux);
+
+        ++compteurNational;
+
+    }
+
+    rechercheGagnant(candidatsNationaux);
+
 }
