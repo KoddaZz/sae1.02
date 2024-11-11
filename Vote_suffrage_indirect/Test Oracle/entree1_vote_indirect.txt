@@ -1,0 +1,71 @@
+// voici le fichier d’entree de la sae 1.02 suffrage indirect
+5
+6
+5
+ELKASSOUF simon
+JACOB alexandre
+NOIRET maxime
+VALETTE lilian
+BREST-LESTRADE hugo
+VALETTE lilian
+VALETTE lilian
+VALETTE lilian
+VALETTE lilian
+VALETTE lilian
+VALETTE lilian
+6
+4
+TAHA CHAOUI amir
+TORCHIN maxence
+TORO etseban
+TRAIKIA rayane
+TAHA CHAOUI amir
+TAHA CHAOUI amir
+TAHA CHAOUI amir
+TAHA CHAOUI amir
+TAHA CHAOUI amir
+TAHA CHAOUI amir
+6
+3
+ZEGGANE sofien
+SISE aboubacar
+SENE pablo
+SENE pablo
+SENE pablo
+SENE pablo
+SENE pablo
+SENE pablo
+SENE pablo
+6
+2 
+ROMBI matis
+RADJOU dinesh
+ROMBI matis
+ROMBI matis
+ROMBI matis
+ROMBI matis
+ROMBI matis
+ROMBI matis
+6
+2
+NGOM magueye
+PALOT thomas
+PALOT thomas 
+PALOT thomas
+6
+5
+VALETTE lilian
+TAHA CHAOUI amir
+SENE pablo
+ROMBI matis
+PALOT thomas
+VALETTE lilian
+PALOT thomas 
+VALETTE lilian
+ROMBI matis 
+ROMBI matis
+ROMBI matis
+
+
+
+
