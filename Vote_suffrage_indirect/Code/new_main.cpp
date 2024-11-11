@@ -63,7 +63,7 @@ void VerificationVoteBlanc(string NomCandidat, map<string, int>& NomCandidatMap)
 int main() {
     initialiserCandidats(DeleguesRegion[1]);
 
-    string SaisieVote = saisieVoteDuVotant();  /
+    string SaisieVote = saisieVoteDuVotant();
     VerificationVoteBlanc(SaisieVote, DeleguesRegion[1]);
 
     cout << "Nombre de votes blancs : " << NombreVotesBlanc << endl;
