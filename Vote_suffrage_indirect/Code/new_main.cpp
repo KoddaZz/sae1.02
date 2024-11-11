@@ -18,13 +18,13 @@ using namespace std;
 map<int, map<string, int>> DeleguesRegion;
 
 int NombreVotesBlanc = 0;
-int nombreDeRegions = 0;
+unsigned int nombreDeRegions = 0;
 int compteurDelegues = 0;
 
 // Initialisation des map des Candidats Regionaux / Nationaux
 int saisieNombreDeCandidats() {
 
-    int nombreDeCandidats = 0;
+    unsigned int nombreDeCandidats = 0;
 
     cout << "Combien de candidats y a t-il ? ";
     cin >> nombreDeCandidats;
@@ -34,7 +34,7 @@ int saisieNombreDeCandidats() {
     return nombreDeCandidats;
 }
 
-void repertoireCandidats(map<string , int> & repertoireCandidats, int nbrCandidats){
+void repertoireCandidats(map<string , int> & repertoireCandidats, unsigned int nbrCandidats){
 
     string saisieNomCandidat;
 
@@ -102,28 +102,28 @@ int main() {
 
         cin.ignore();
 
-        int nombreDeCandidatsVoteRegional = saisieNombreDeCandidats();
+        unsigned int nombreDeCandidatsVoteRegional = saisieNombreDeCandidats();
         repertoireCandidats(DeleguesRegion[i], nombreDeCandidatsVoteRegional);
 
         while (compteurDelegues < nombreDeVotantsRegional) {
-          
+
             string SaisieVote = saisieVoteDuVotant();
             DepouillageVote(SaisieVote, DeleguesRegion[i]);
-            
+
             ++compteurDelegues;
         }
 
-    compteurDelegues = 0;
-    rechercheGagnant(DeleguesRegion[i]);
+        compteurDelegues = 0;
+        rechercheGagnant(DeleguesRegion[i]);
 
     }
 
     map<string, int> candidatsNationaux;
 
-    int nombreDeCandidatsVoteNational = saisieNombreDeCandidats();
+    unsigned int nombreDeCandidatsVoteNational = saisieNombreDeCandidats();
     repertoireCandidats(candidatsNationaux, nombreDeCandidatsVoteNational);
 
-    int compteurNational = 0;
+    unsigned int compteurNational = 0;
 
     while (compteurNational < nombreDeRegions) {
 
