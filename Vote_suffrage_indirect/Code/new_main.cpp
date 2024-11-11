@@ -61,10 +61,10 @@ void VerificationVoteBlanc(string NomCandidat, map<string, int>& NomCandidatMap)
 }
 
 int main() {
-    initialiserCandidats(DeleguesRegion[1]);
+    initialiserCandidats(DeleguesRegion[1]); // LE "1" c'était juste pour test
 
     string SaisieVote = saisieVoteDuVotant();
-    VerificationVoteBlanc(SaisieVote, DeleguesRegion[1]);
+    VerificationVoteBlanc(SaisieVote, DeleguesRegion[1]); // LE "1" c'était juste pour test
 
     cout << "Nombre de votes blancs : " << NombreVotesBlanc << endl;
 
