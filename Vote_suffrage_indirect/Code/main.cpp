@@ -29,8 +29,6 @@ int main() {
     unsigned compteur2 = 0;
     unsigned nombreVoteBlancNational = 0;
 
-    map<int, string> dicoDeleguesParRegions;
-
     map<int,int> nombreVotesBlancParRegions;
 
     for (unsigned i = 0; i < nombreRegion; ++i) {
@@ -55,7 +53,6 @@ int main() {
             // //getline(cin, var);
             cout << "Entrez le nom du candidat : ";
             cin >> quoted(saisieNomCandidatVote);
-            cout << endl;
             ++compteur;
             if (DeleguesRegion[i].find(saisieNomCandidatVote) != DeleguesRegion[i].end()) {
                 ++DeleguesRegion[i][saisieNomCandidatVote ];
