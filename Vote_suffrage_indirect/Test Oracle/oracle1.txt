@@ -1,0 +1,12 @@
+// voici le fichier de sortie de la sae 1.02 vote indirect
+Le Vainqueur de cette élection est : VALETTE lilian
+Le Vainqueur de cette élection est : TAHA CHAOUI amir
+Le Vainqueur de cette élection est : SENE pablo
+Le Vainqueur de cette élection est : ROMBI matis
+Le Vainqueur de cette élection est : PALOT thomas
+Le Vainqueur de cette élection est : ROMBI matis
+
+
+
+
+
