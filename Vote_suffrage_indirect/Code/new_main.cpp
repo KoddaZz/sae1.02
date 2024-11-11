@@ -48,7 +48,7 @@ string saisieVoteDuVotant() {
     cout << "Pour quel candidat souhaitez-vous voter ? ";
     getline(cin, saisieVote);
 
-    return saisieVote;  /
+    return saisieVote;
 }
 
 // FONCTION : Sert à vérifier si le nom du candidat existe, si non cela sera considéré comme un vote blanc
