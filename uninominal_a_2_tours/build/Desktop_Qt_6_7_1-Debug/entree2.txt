@@ -1,0 +1,16 @@
+// VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS  (JEU 2)
+// Saisir le nombre de candidats
+4
+// Candidats :
+Football
+Handball
+Volleyball
+Basketball
+// Votes :
+32
+21
+34
+27
+// Second tour :
+57 
+57

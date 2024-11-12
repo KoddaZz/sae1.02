@@ -1,0 +1,15 @@
+// VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS (JEU 1)
+// Saisir le nombre de candidats 
+5
+// Candidats :
+Ali
+Ewan
+Theo
+Alexis
+Jules
+// Voix :
+5 
+6
+7
+2
+22
