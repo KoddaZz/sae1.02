@@ -17,7 +17,7 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
         if(input.substr(0,2)=="//"){
             continue;
         }
-        if (input.substr(0, 18) == "//liste des glaces") {
+        if (input.substr(2, 18) == "liste des glaces") {
             lectureGlaces = true;
             lectureVotes = false;
             continue;
