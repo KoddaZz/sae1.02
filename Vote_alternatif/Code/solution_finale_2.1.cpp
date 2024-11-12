@@ -9,11 +9,13 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
     string ligne;
     bool lectureGlaces = false;
     bool lectureVotes = false;
+    string input;
     getline(cin, input);
     while(input.substr(0,3)!="fin"){
         getline(cin,input);
+        
         if(input.substr(0,2)=="//"){
-            continue
+            continue;
         }
         if (input.substr(0, 18) == "//liste des glaces") {
             lectureGlaces = true;
@@ -31,13 +33,13 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
         }
         else if (lectureVotes==true){
             vector<int> preferences;
-                for (size_t i = 0; i < input.size(); ++i) {
-                    if (isdigit(input[i]) {
-                        int preference = input[i] - '0'; // Convertit le caractère en entier
-                        preferences.push_back(preference - 1); // Ajuste pour un index de vecteur basé sur zéro
-                    }
+            for (size_t i = 0; i < input.size(); ++i) {
+                if (isdigit(input[i])) {
+                    int preference = input[i] - '0'; // Convertit le caractère en entier
+                    preferences.push_back(preference - 1); // Ajuste pour un index de vecteur basé sur zéro
                 }
-                votes.push_back(preferences);
+            }
+            votes.push_back(preferences);
         }
     }
 }
@@ -120,15 +122,6 @@ int main() {
     while (true) {
         // Décompte initial ou après chaque élimination
         decompte(votes, compte);
-
-        // Afficher les résultats des comptes pour chaque candidat
-        cout << "Les premiers votes sont : " << endl;
-        for (unsigned i = 0; i < glaces.size(); ++i) {
-            if (!elimines[i]) {
-                cout << glaces[i] << " a obtenu " << compte[i] << " premier(s) vote(s)." << endl;
-            }
-        }
-
         if (majorite(compte, numVotes)) {
             break;
         }
