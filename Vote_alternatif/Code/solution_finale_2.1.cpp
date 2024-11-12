@@ -13,7 +13,7 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
     getline(cin, input);
     while(input.substr(0,3)!="fin"){
         getline(cin,input);
-        
+
         if(input.substr(0,2)=="//"){
             continue;
         }
@@ -35,7 +35,7 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
             vector<int> preferences;
             for (size_t i = 0; i < input.size(); ++i) {
                 if (isdigit(input[i])) {
-                    int preference = input[i] - '0'; // Convertit le caractère en entier
+                    int preference = input[i] - '0'; // Convertit le caractère en entier grâce au code ASCII
                     preferences.push_back(preference - 1); // Ajuste pour un index de vecteur basé sur zéro
                 }
             }
