@@ -157,5 +157,8 @@ int main() {
     }
 
     rechercheGagnant(candidatsNationaux); // renvoie le vainqueur l'élection nationale
+    cout << " " << endl;
+    cout << " Cette élection s'est terminée avec " << NombreVotesBlanc << " vote(s) blanc(s) ! " << endl;
+    cout << " " << endl;
 
 }
