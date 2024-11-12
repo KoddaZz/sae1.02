@@ -30,12 +30,41 @@ BOUGHERARA Adam
 BURBECK Heather
 // VOTE
 ARFI Maxime
-ARFI Maxime
-FERRAT Jibril
 ARSENA Claire
 ARFI Maxime
-CASALI Alain // VOTE BLANC ?
-FERRAT Jibril
+AMROUNE Akim
+ARFI Maxime
+AHAMED Nasser
+ANTOINE Thomas
+ARFI Maxime
+ARBADJI Maxime
+ARBOUZ Iklil
+ARFI Maxime
+AZOUG Kylian
+BEN SALEM Mohamed
+ARSENA Claire
+ARFI Maxime
+ATHERLY Evan
+BAGNIS Enzo
+BARBERIS Alexis
+BEN GADHA Imen
+BENAHMED Younes
+BURBECK Heather
+BOUACHERIA-KEBIR Imed
+ARFI Maxime
+ARFI Maxime
+BOUGHERARA Adam
+ARSENA Claire
+BOUDHIB Mohamed-Amine
+BILLUART Florian
+BOUDIA--THOMAS Akcyl
+ARSENA Claire
+CASALI Alain
+BORSOTTO Antonin
+BEN SALEM Mohamed
+BOUGHERARA Adam
+ANTOINE Thomas
+ARBOUZ Iklil
 //REGION 2
 3
 10
