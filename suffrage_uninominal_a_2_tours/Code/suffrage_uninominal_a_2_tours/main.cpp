@@ -53,7 +53,7 @@ de remplir le vecteur vide avec le nombre de voix qu'a obtenu chaque candidat */
     // On vide le tableau au cas où le vecteur n'est pas vide :
     votes.clear();
     
-    // L'utilisateur saisit les votes qu'ont obtenu les candidats :
+    // On saisit les votes qu'ont obtenu les candidats :
     size_t vote_tmp ;
     for (size_t i = 0 ; i < tableau_candidats.size() ; i = i + 1)
     {
@@ -61,8 +61,6 @@ de remplir le vecteur vide avec le nombre de voix qu'a obtenu chaque candidat */
         votes.push_back(vote_tmp);
         
     }
-    
-    // On affiche les votes :
 }
 
 int main()
@@ -82,8 +80,8 @@ int main()
         somme_des_votes = somme_des_votes + votes[i] ;
     }
     
-    unsigned i = 0 ;
-    unsigned x = 0 ;
+    unsigned i = 0 ; // compteur 
+    unsigned x = 0 ; // variable qui vaut 0 s'il n'y a pas de majorité absoule, 1 sinon
     
     while(i < votes.size())
     {
@@ -105,7 +103,6 @@ int main()
     // Si x vaut 0 ( c'est-à-dire qu'il n'y a pas de majorité absolue ) on procède au second tour :
     if (x == 0)
     {
-        // cout << "Il n'y a pas de majorité absolue. Nous allons donc effectuer un second tour." << endl << endl ;
         
         // Second tour :
         
@@ -149,6 +146,7 @@ int main()
         vector <string> tableau_des_candidats2 ;
         tableau_des_candidats2.push_back(premier_candidat);
         tableau_des_candidats2.push_back(second_candidat);
+        
         // On saisit le nombre de votes qu'on obtenu les candidats au second tour avec la procédure saisirVotes() :
         vector <size_t> votes_second_tour ;
         saisirVotes(tableau_des_candidats2,votes_second_tour);
