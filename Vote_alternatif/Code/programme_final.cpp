@@ -10,39 +10,50 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
     bool lectureGlaces = false;
     bool lectureVotes = false;
     string input;
-    getline(cin, input);
-    while(input.substr(0,3)!="fin"){
-        getline(cin,input);
+    cout << "test3";
 
-        if(input.substr(0,2)=="//"){
-            continue;
+    while(true){
+        getline(cin,input);
+        cout<<input<<endl;
+        if(input.substr(0,3)=="fin"){
+            break;
         }
-        if (input.substr(2, 18) == "liste des glaces") {
+
+        if (input.substr(2, 16) == "liste des glaces") {
             lectureGlaces = true;
             lectureVotes = false;
             continue;
         }
-        if (input.substr(0, 21) == "//voila la liste des joueurs")
+        if (input.substr(2, 26) == "voila la liste des joueurs")
         {
+            cout<<"essai";
             lectureGlaces = false;
             lectureVotes = true;
+            continue;
+        }
+        if(input.substr(0,2)=="//"){
             continue;
         }
         if (lectureGlaces==true) {
             glaces.push_back(input);
         }
         else if (lectureVotes==true){
+            cout << "test2"<<endl;
             vector<int> preferences;
+            cout<<"taille: "<<input.size()<<endl;
             for (size_t i = 0; i < input.size(); ++i) {
                 if (isdigit(input[i])) {
                     int preference = input[i] - '0'; // Convertit le caractère en entier grâce au code ASCII
-                    preferences.push_back(preference - 1); // Ajuste pour un index de vecteur basé sur zéro
+                    preferences.push_back(preference-1); // Ajuste pour un index de vecteur basé sur zéroccccccccc
+                    //preferences.push_back(0);
+                    cout<<preferences[i]<<endl;
                 }
             }
             votes.push_back(preferences);
         }
     }
 }
+
 
 // Fonction pour compter les premières préférences
 void decompte(const vector<vector<int>>& votes, vector<int>& compte) {
@@ -57,6 +68,7 @@ void decompte(const vector<vector<int>>& votes, vector<int>& compte) {
         }
     }
 }
+
 
 // Procédure pour afficher les votes et candidats
 void afficherVotes(const vector<string>& candidats, const vector<vector<int>>& votes) {
@@ -106,7 +118,9 @@ void eliminerCandidat(vector<vector<int>>& votes, int candidatElimine) {
     }
 }
 
+
 int main() {
+    cout << "testttt";
     vector<string> glaces;
     vector<vector<int>> votes;
     lireFichierEntree(glaces, votes);
