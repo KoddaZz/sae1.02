@@ -5,350 +5,119 @@ Mangue
 Fraises
 //voila la liste des joueurs
 //et encore un autre commentaire
-AROUSSI BENTATA
-Adam
 4 3 2 1
-ACEMYAN DE OLIVEIRA
-Ewan
 2 1 4 3
-ACH                     
-Sofia
 2 4 1 3
-AGGAB
-Mohammed
 2 4 1 3
-AHAMED
-Nasser
 2 1 3 4
-ALLARD
-Loan
 1 4 3 2
-AMARA
-Sinda
 1 4 2 3
-AMROUNE
-Akim
 2 1 4 3
-ANTOINE
-Thomas
 2 4 1 3
-ARBADJI
-Maxime
 2 1 3 4
-ARBOUZ
-Iklil
 2 1 3 4
-ARFI
-Maxime
 2 1 4 3
-ARSENA
-Claire
 2 1 3 4
-ATHERLY
-Evan
 1 3 2 4
-AZOUG
-Kylian
 1 4 2 3
-BAGNIS
-Enzo
 2 1 4 3
-BARBERIS
-Alexis
 4 2 1 3
-BAURENS - TORRENTE
-Valentin
 3 4 2 1
-BEN GADHA
-Imen
 1 3 4 2
-BEN SALEM
-Mohamed
 2 1 3 4
-BENAHMED
-Younes
 4 1 3 2
-BENHAFESSA
-Alexandre
 3 4 1 2
-BILLUART
-Florian
 4 3 2 1
-BORSOTTO
-Antonin
 2 1 3 4
-BOUACHERIA-KEBIR
-Imed
 4 2 1 3
-BOUDHIB          
-Mohamed-Amine
 3 4 2 1
-BOUDIA--THOMAS
-Akcyl
 4 2 3 1	
-BOUGHERARA
-Adam
 2 3 1 4
-BREST-LESTRADE
-Hugo
 1 4 3 2
-BURBECK
-Heather
 4 3 2 1
-CANTOR
-Romain
 1 3 4 2
-CELESTINE
-Samuel
 3 4 2 1
-CHETIOUI
-Willem
 4 3 1 2
-CLOT-GODARD
-Kenji
 4 3 2 1
-CONTRUCCI     
-Lou
 3 4 1 2
-CORDOVANA     
-Enzo
 3 4 2 1
-COULPOTIN
-Evan
 4 1 3 2
-CRESPO - MICHAILIDIS
-Dimitri
 2 3 1 4
-CURNIER
-Anthony
 1 4 2 3
-DAHMOUCHE
-Wissem
 1 4 3 2
-DAOUAYRY
-Sofian
 2 1 4 3
-DARGENTOLLE
-Francois
 4 3 2 1
-DECAMPS
-Lou
 3 2 1 4
-DEMANGE
-Martin
 4 2 1 3
-DIAZ
-Gwenn
 2 3 1 4
-DRIOUCHI
-Mohamed
 4 1 2 3
-DUMONT
-Aline
 1 4 2 3
-EDELSTEIN
-William
 3 1 2 4
-EL FAHSSI
-Hicham
 4 1 3 2
-EL HABRIRI
-Samy
 1 3 2 4
-EL KASSOUF
-Simon
 3 1 2 4
-FABRE
-Alexis
 1 3 2 4
-FALFERI
-Angelo
 4 3 1 2
-FAUTSCH          
-Mathis
 3 1 2 4
-FERRAT
-Jibril
 3 1 4 2
-FUSELIER
-Jules
 3 1 4 2
-GHEUX
-Theo
 1 4 2 3
-GIUSIANO
-Eloise
 2 3 4 1
-GRIGUER
-Nathan
 4 1 2 3
-GUDENSCHWAGER
-Oliver
 3 4 2 1
-GUL
-Furkan
 1 3 4 2
-GUZELBABA
-Imran
 4 1 3 2
-HADDAD
-Mohamed-Amine
 4 1 2 3
-HELALI
-Amin
 2 4 1 3
-HENG
-Hugo
 3 4 1 2
-HERNANDEZ
-Loic
 4 2 1 3
-HU
-Swan
 3 2 1 4
-JACOB
-Alexandre
 3 2 4 1
-Demba
 1 2 4 3
-KAMARZINE
-Aurelien
 2 4 1 3
-KOLIAI
-Hamza
 1 3 2 4
-KUROPATWA-BUTTE  
-Adam
 1 2 3 4
-LACORRE
-Axel
 2 3 1 4
-LAURIOL-TORCQ
-Mathis
 1 4 3 2
-LE DENMAT
-Pierre
 1 4 3 2
-LEPAPE
-Lucas
 4 2 3 1
-MAILHE      
-Gustin
 2 1 4 3
-MARCHITTO
-Ilian
 1 3 2 4
-MARCUS
-William
 1 2 4 3
-MEFTAHI
-Mohamed
 1 3 2 4
-MEGNOUCHE
-Riad
 2 4 1 3
-MEJEAN
-Oriane
 2 1 3 4
-MEKIDICHE         
-Idris
 1 3 4 2
-NAHI
-Amine
 2 3 4 1
-NEIRA
-Leandro
 2 4 3 1
-NEPOTU
-Gheorghe
 3 2 1 4
-NGOM
-Magueye
 3 4 2 1
-NOIRET
-Maxime
 2 1 4 3
-ORLANDI
-Lenny
 3 1 4 2
-PANAIVA
-Jeremy
 2 4 1 3
-PALOT
-Thomas
 2 3 4 1
-PIBOULEAU
-Jean-Baptiste
 4 2 1 3
-POGHOSSIAN
-Mariam
 1 3 4 2
-QUILLIEC
-Matisse
 3 1 4 2
-RADJOU
-Dinesh
 3 1 2 4
-RAPANAKIS-BOURG
-Marius
 1 3 2 4
-RATIANANAHARY
-Karmen
 2 3 1 4
-REGNIER
-Vassili
 4 3 1 2
-RIBBE 
-Jules
 4 3 2 1
-RINALDI
-Antoine
 3 2 4 1
-RIVA KARAKA ABDEREMANE
-Imric
 3 2 4 1
-ROFFIDAL
-Ambre
 4 2 1 3
-ROMBI           
-Matis
 2 1 3 4
-SAADI
-Ismail
 1 4 3 2
-SANTOS JORGE
-Francisco
 3 2 4 1
-SENE
-Pablo
 2 3 4 1
-SISE
-Aboubakar
 4 1 3 2
-STEFANOVITCH
-Ilann
 3 1 4 2
-TAHA CHAOUI
-Amir
 3 2 1 4
-TORCHIN
-Maxence
 1 2 3 4
-TORO
-Esteban
 1 3 4 2
-TRAIKIA
-Rayane
 1 3 2 4
-UYSUN
-Ali
 2 4 1 3
-VALETTE
-Lilian
 4 3 2 1
-WATRIPONT
-Jeremy 
 2 1 4 3
-ZEGGANE 
-Sofien
 2 1 4 3
