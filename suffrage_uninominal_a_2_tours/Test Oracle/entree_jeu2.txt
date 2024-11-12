@@ -11,7 +11,7 @@ Basketball
 21
 34
 27
-// Second tour :
+// Second tour (première entrée pour lui qui a eu le plus de voix au premier tour, puis deuxième entrée pour le deuxième qui a eu le plus de voix au premier tour) :
 57 
 57
 
