@@ -132,7 +132,7 @@ int main()
             }
         }
 
-        premier_candidat = tableau_des_candidats[indice] ;
+        premier_candidat= tableau_des_candidats[indice] ;
 
         for(size_t i = 0 ; i < votes.size() ; i = i + 1)
         {
