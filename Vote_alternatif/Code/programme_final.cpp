@@ -103,18 +103,19 @@ int trouverDernier(const vector<int>& compte, const vector<bool>& elimines) {
     return dernier;
 }
 
-// Nouvelle fonction pour éliminer le candidat avec le moins de votes
+// Fonction pour éliminer le candidat avec le moins de votes
 void eliminerCandidat(vector<vector<int>>& votes, int candidatElimine) {
     for (size_t i = 0; i < votes.size(); ++i) {
         // Parcourir chaque vecteur de votes des joueurs
         vector<int>& preferences = votes[i];
 
-        // On parcourt les préférences de chaque joueur et on enlève le candidat éliminé
+        // On parcourt les préférences de chaque joueur et on enlève les occurences du candidat éliminé
         for (size_t j = 0; j < preferences.size(); ++j) {
             if (preferences[j] == candidatElimine) {
                 // Décalage des éléments à partir de j
                 for (size_t k = j; k < preferences.size() - 1; ++k) {
-                    preferences[k] = preferences[k + 1]; // Déplacer les éléments vers la gauche
+                    // Déplacement des éléments vers la gauche
+                    preferences[k] = preferences[k + 1]; 
                 }
                 preferences.resize(preferences.size() - 1); // Réduire la taille du vecteur
                 break; // On s'arrête dès qu'on a trouvé et supprimé l'élément
@@ -142,19 +143,20 @@ int main() {
     while (true) {
         // Décompte initial ou après chaque élimination
         decompte(votes, compte);
+        //Si il y a majorité absolue on sort de la boucle
         if (majorite(compte, numVotes)) {
             break;
         }
 
         // Trouver le dernier candidat et l'éliminer
         int candidatElimine = trouverDernier(compte, elimines);
-        cout << "Le candidat " << glaces[candidatElimine] << " est éliminé." << endl;
         elimines[candidatElimine] = true;
         eliminerCandidat(votes, candidatElimine);
     }
 
     for (unsigned i = 0; i < compte.size(); ++i) {
         if (compte[i] > numVotes / 2) {
+            //Affichage final
             cout << "Le gagnant est " << glaces[i] << " avec " << compte[i] << " votes." << endl;
             break;
         }
