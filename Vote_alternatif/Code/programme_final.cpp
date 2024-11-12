@@ -103,11 +103,23 @@ int trouverDernier(const vector<int>& compte, const vector<bool>& elimines) {
     return dernier;
 }
 
-// Procédure pour éliminer le candidat avec le moins de votes
+// Nouvelle fonction pour éliminer le candidat avec le moins de votes
 void eliminerCandidat(vector<vector<int>>& votes, int candidatElimine) {
     for (size_t i = 0; i < votes.size(); ++i) {
-        //On enlève de notre tableau vote le candidat éliminé
-        votes[i].erase(remove(votes[i].begin(), votes[i].end(), candidatElimine), votes[i].end());
+        // Parcourir chaque vecteur de votes des joueurs
+        vector<int>& preferences = votes[i];
+
+        // On parcourt les préférences de chaque joueur et on enlève le candidat éliminé
+        for (size_t j = 0; j < preferences.size(); ++j) {
+            if (preferences[j] == candidatElimine) {
+                // Décalage des éléments à partir de j
+                for (size_t k = j; k < preferences.size() - 1; ++k) {
+                    preferences[k] = preferences[k + 1]; // Déplacer les éléments vers la gauche
+                }
+                preferences.resize(preferences.size() - 1); // Réduire la taille du vecteur
+                break; // On s'arrête dès qu'on a trouvé et supprimé l'élément
+            }
+        }
     }
 }
 
