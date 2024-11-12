@@ -9,7 +9,7 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
     string ligne;
     bool lectureGlaces = false;
     bool lectureVotes = false;
-    
+
     while (getline(cin, ligne)) {
         if (ligne.find("//liste des glaces") != string::npos) {
             lectureGlaces = true;
@@ -24,16 +24,23 @@ void lireFichierEntree(vector<string>& glaces, vector<vector<int>>& votes) {
         if (ligne.find("//") != string::npos) {
             continue;
         }
-        
+
         if (lectureGlaces) {
             glaces.push_back(ligne);
-        } 
+        }
         else if (lectureVotes) {
             if (!ligne.empty() && isdigit(ligne[0])) {
                 vector<int> preferences;
                 int preference;
-                stringstream ss(ligne);
-                while (ss >> preference) {
+                size_t pos = 0;
+                while ((pos = ligne.find(' ')) != string::npos) {
+                    preference = stoi(ligne.substr(0, pos));
+                    preferences.push_back(preference - 1);
+                    ligne.erase(0, pos + 1);
+                }
+                // Add the last number
+                if (!ligne.empty()) {
+                    preference = stoi(ligne);
                     preferences.push_back(preference - 1);
                 }
                 votes.push_back(preferences);
@@ -113,8 +120,8 @@ int main() {
     int numVotes = votes.size();
 
     // Initialiser le vecteur compte pour stocker les votes
-    vector<int> compte(candidat.size(), 0);
-    vector<bool> elimines(candidat.size(), false);
+    vector<int> compte(glaces.size(), 0);
+    vector<bool> elimines(glaces.size(), false);
 
     // Boucle tant qu'il n'y a pas de majorité absolue
     while (true) {
@@ -123,9 +130,9 @@ int main() {
 
         // Afficher les résultats des comptes pour chaque candidat
         cout << "Les premiers votes sont : " << endl;
-        for (unsigned i = 0; i < candidat.size(); ++i) {
+        for (unsigned i = 0; i < glaces.size(); ++i) {
             if (!elimines[i]) {
-                cout << candidat[i] << " a obtenu " << compte[i] << " premier(s) vote(s)." << endl;
+                cout << glaces[i] << " a obtenu " << compte[i] << " premier(s) vote(s)." << endl;
             }
         }
 
@@ -135,14 +142,14 @@ int main() {
 
         // Trouver le dernier candidat et l'éliminer
         int candidatElimine = trouverDernier(compte, elimines);
-        cout << "Le candidat " << candidat[candidatElimine] << " est éliminé." << endl;
+        cout << "Le candidat " << glaces[candidatElimine] << " est éliminé." << endl;
         elimines[candidatElimine] = true;
         eliminerCandidat(votes, candidatElimine);
     }
 
     for (unsigned i = 0; i < compte.size(); ++i) {
         if (compte[i] > numVotes / 2) {
-            cout << "Le gagnant est " << candidat[i] << " avec " << compte[i] << " votes." << endl;
+            cout << "Le gagnant est " << glaces[i] << " avec " << compte[i] << " votes." << endl;
             break;
         }
     }
