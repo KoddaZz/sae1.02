@@ -1,5 +1,4 @@
-// VOICI LE FICHIER ORACLE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS ( EX : France )
-
+// VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS ( EX : France )
 // Saisir le nombre de candidats 
 5
 // Candidats :
@@ -8,3 +7,10 @@ Ewan
 Theo
 Alexis
 Jules
+// Voix :
+5 
+6
+7
+2
+22
+
