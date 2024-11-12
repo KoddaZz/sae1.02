@@ -1,211 +1,119 @@
 // VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN SUFFRAGE INDIRECT ( EX : VOTE AMERICAIN )
-
-
 6
 //REGION 1
 7
-
 5
-
 HENG Hugo
-
 ALLARD Loan
-
 ARSENA Claire
-
 ARFI Maxime
-
 FERRAT Jibril
 // VOTE
 ARFI Maxime
-
 ARFI Maxime
-
 FERRAT Jibril
-
 ARSENA Claire
-
 ARFI Maxime
-
 CASALI Alain // VOTE BLANC ?
-
 FERRAT Jibril
 //REGION 2
 3
-
 10
-
 NAHI Amine
-
 ROMBI Matis
-
 ZEGGANE Sofien
-
 LEPAPE Lucas
-
 MARCUS William
-
 KUROPATWA-BUTTE Adam
-
 LACORRE Axel
-
 JACOB Alexandre
-
 HU Swan
-
 CONTRUCCI Lou
 //VOTE
 JACOB Alexandre
-
 KUROPATWA-BUTTE Adam
-
 KUROPATWA-BUTTE Adam
 //REGION 3
 5
-
 5
-
 CELESTINE Samuel
-
 BENHAFESSA Alexandre
-
 BAGNIS Enzo
-
 ANTOINE Thomas
-
 AGGAB Mohammed
 //VOTE
 AGGAB Mohammed
-
 AGGAB Mohammed
-
 BENHAFESSA Alexandre
-
 AGGAB Mohammed
-
 AGGAB Mohammed
 //REGION 4
 12
-
 3
-
 AMARA Sinda
-
 GHEUX Theo
-
 MEJEAN Oriane
-
 GHEUX Theo
 //VOTE
 MEJEAN Oriane
-
 GHEUX Theo
-
 AMARA Sinda
-
 GHEUX Theo
-
 GHEUX Theo
-
 MEJEAN Oriane
-
 GHEUX Theo
-
 AMARA Sinda
-
 AMARA Sinda
-
 AMARA Sinda
-
 GHEUX Theo
-
 MEJEAN Oriane
 //REGION 5
 4
-
 3
-
 RIBBE Jules
-
 PALOT Thomas
-
 PIBOULEAU Jean-Baptiste
 //VOTE
 RIBBE Jules
-
 RIBBE Jules
-
 PIBOULEAU Jean-Baptiste
-
 PALOT Thomas
 //REGION 6
 20
-
 3
-
 UYSUN Ali
-
 VALETTE Lilian
-
 RATIANANAHARY Karmen
 // VOTE
-
 UYSUN Ali
-
 VALETTE Lilian
-
 UYSUN Ali
-
 UYSUN Ali
-
 VALETTE Lilian
-
 UYSUN Ali
-
 RATIANANAHARY Karmen
-
 UYSUN Ali
-
 UYSUN Ali
-
 VALETTE Lilian
-
 UYSUN Ali
-
 VALETTE Lilian
-
 UYSUN Ali
-
 RATIANANAHARY Karmen
-
 UYSUN Ali
-
 UYSUN Ali
-
 VALETTE Lilian
-
 RATIANANAHARY Karmen
-
 VALETTE Lilian
-
 RATIANANAHARY Karmen
 //NATIONAL
 3
-
 FABRE Alexis
-
 FUSELIER Jules
-
 BREST-LESTRADE Hugo
 // VOTE
 BREST-LESTRADE Hugo
-
 FABRE Alexis
-
 BREST-LESTRADE Hugo
-
 FUSELIER Jules
-
 FUSELIER Jules
-
 BREST-LESTRADE Hugo
