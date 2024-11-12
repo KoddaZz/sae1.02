@@ -1,18 +1,18 @@
 // VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS  (JEU 2)
+// Saisir le nombre de candidats
+4
+// Candidats :
+Football
+Handball
+Volleyball
+Basketball
+// Votes :
+32
+21
+34
+27
+// Second tour :
+57 
+57
 
-JEUX 2 :
-Nombre de candidats : 4
-Candidat 1 : Football
-Candidat 2 : Handball
-Candidat 3 : Volleyball
-Candidat 4 : Basketball
-Votes pour Football : 32
-Votes pour Handball : 21
-Votes pour Volleyball : 34
-Votes pour Basketball : 27
-Résultat attendu : passage au second tour 
-Votes pour Football : 57
-Votes pour Volleyball : 57
-Egalité
-Résulat attendu : Gagant = Vollayball (majorité au premier tour)
 
