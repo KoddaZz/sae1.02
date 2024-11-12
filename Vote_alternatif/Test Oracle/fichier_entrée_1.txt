@@ -3,8 +3,8 @@ Choco
 Banane
 Mangue
 Fraises
+//fin glaces
 //voila la liste des joueurs
-//et encore un autre commentaire
 1 2 4 3
 1 2 4 3
 1 2 4 3
@@ -121,3 +121,4 @@ Fraises
 1 2 4 3
 1 2 4 3
 1 2 4 3
+fin
