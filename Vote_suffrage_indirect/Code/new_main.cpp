@@ -11,8 +11,7 @@ Authors : GHEUX Théo
 #include <string>
 #include <map>
 #include <cstdlib>
-#include <ctime>
-
+#include <algorithm>
 using namespace std;
 
 map<int, map<string, int>> DeleguesRegion;
@@ -22,14 +21,34 @@ int nombreDeRegions = 0;
 int compteurDelegues = 0;
 
 // Initialisation des map des Candidats Regionaux / Nationaux
+
+string LitUneString() {
+    string input;
+    string lignelue;
+
+    getline(cin, input);
+    if (input.size() > 1) {
+        lignelue = input;
+    }
+    return lignelue;
+}
+
+int LitUneInt() {
+  string input;
+  int lignelue;
+
+  getline(cin, input);
+
+  lignelue = input[0] - '0';
+
+  return lignelue;
+}
+
 int saisieNombreDeCandidats() {
 
     int nombreDeCandidats = 0;
 
-    cout << "Combien de candidats y a t-il ? ";
-    cin >> nombreDeCandidats;
-
-    cin.ignore();
+    nombreDeCandidats = LitUneInt();
 
     return nombreDeCandidats;
 }
@@ -40,8 +59,7 @@ void repertoireCandidats(map<string , int> & repertoireCandidats, int nbrCandida
 
     for (unsigned int candidat = 0; candidat < nbrCandidats; ++candidat) {
 
-        cout << "Initalisez le nom du candidat : ";
-        getline(cin, saisieNomCandidat);
+        saisieNomCandidat = LitUneString();
 
         repertoireCandidats[saisieNomCandidat] = 0;
 
@@ -53,8 +71,7 @@ void repertoireCandidats(map<string , int> & repertoireCandidats, int nbrCandida
 string saisieVoteDuVotant() {
     string saisieVote = "";
 
-    cout << "Pour quel candidat souhaitez-vous voter ? ";
-    getline(cin, saisieVote);
+    saisieVote = LitUneString();
 
     return saisieVote;
 }
@@ -85,22 +102,18 @@ void rechercheGagnant(map<string, int>& NomCandidatMap){
 
 }
 
+
+
 int main() {
 
     int compteurDelegues = 0;
     int nombreDeVotantsRegional = 0;
 
-    cout << "Combien il y a t-il de région ? ";
-    cin >> nombreDeRegions;
-
-    cin.ignore();
+    nombreDeRegions = LitUneInt();
 
     for (unsigned i = 0; i < nombreDeRegions; ++i) {
 
-        cout << "Combien de votants y a t-il pour le vote régional ? ";
-        cin >> nombreDeVotantsRegional;
-
-        cin.ignore();
+        nombreDeVotantsRegional = LitUneInt();
 
         int nombreDeCandidatsVoteRegional = saisieNombreDeCandidats();
         repertoireCandidats(DeleguesRegion[i], nombreDeCandidatsVoteRegional);
