@@ -1,5 +1,5 @@
 //VOICI LE FICHIER ORACLE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS (JEU 2)
-IL y'a égalité entre les deux candidats du second tour car ils ont tous les deux obtenu 57 votes.
+IL y'a égalité entre les deux candidats du second tour car ils ont tous les deux obtenu 58 votes.
 Le gagnant est donc le candidat qui a obtenu le plus de voix au premier tour.
-Au premier tour, Volleyball a obtenu 34 voix tandis que Football a obtenu 32 voix.
+Au premier tour, Volleyball a obtenu 24 voix tandis que Football a obtenu 22 voix.
 C'est donc Volleyball qui a obtenu la majorité et remporte ainsi le vote.
