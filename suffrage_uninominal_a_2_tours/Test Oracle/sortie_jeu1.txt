@@ -1,2 +1,3 @@
 //VOICI LE FICHIER ORACLE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS (JEU 1)
-Jules a obtenue une majorité absolue avec 22 voix et remporte donc le vote.
+UYSUN Ali a obtenu 3481 votes tandis que ACEMYAN DE OLIVEIRA Ewan a obtenu 3061 votes.
+C'est donc UYSUN Ali qui a obtenu la majorité et remporte ainsi le vote.
