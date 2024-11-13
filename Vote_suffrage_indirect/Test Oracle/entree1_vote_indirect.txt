@@ -1,5 +1,5 @@
 // voici le fichier d’entree de la sae 1.02 suffrage indirect
-5
+6
 // REGION 1
 74
 30
@@ -108,8 +108,6 @@ AHAMED Nasser
 AMROUNE Akim
 AHAMED Nasser
 BARBERIS Alexis
-FALFERI Angelo
-FERRAT Jibril
 // REGION 2
 122
 40
@@ -276,8 +274,6 @@ RIBBE Jules
 RINALDI Antoine
 RIVA KARAKA ABDEREMANE Imric
 ROFFIDAL Ambre
-ROMBI Matis
-SAADI Ismail
 //REGION 3
 117
 40
@@ -439,8 +435,6 @@ RIBBE Jules
 RINALDI Antoine
 RIVA KARAKA ABDEREMANE Imric
 ROFFIDAL Ambre
-ROMBI Matis
-SAADI Ismail
 // REGION 4
 42
 40
@@ -527,8 +521,6 @@ FAUTSCH Mathis
 FERRAT Jibril
 KAMARA Demba
 GHEUX Theo
-GIUSIANO Eloise
-KAMARA Demba
 //REGION 5
 42
 40
@@ -615,8 +607,6 @@ RIVA KARAKA ABDEREMANE Imric
 ROFFIDAL Ambre
 ROMBI Matis
 HERNANDEZ Loic
-SANTOS JORGE Francisco
-SENE Pablo
 //REGION 6
 48
 50
@@ -719,8 +709,6 @@ DUMONT Aline
 EDELSTEIN William
 FUSELIER Jules
 EL FAHSSI Hicham
-EL HABRIRI Samy
-FUSELIER Jules
 //NATIONAL
 105
 ACH Sofia
