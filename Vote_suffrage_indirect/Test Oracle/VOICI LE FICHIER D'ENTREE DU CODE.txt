@@ -79,9 +79,8 @@ ARFI Maxime
 ARFI Maxime
 AZOUG Kylian
 BOUDHIB Mohamed-Amine
-ATHERLY Evan
 //REGION 2
-53
+50
 30
 CANTOR Romain
 CELESTINE Samuel
@@ -164,10 +163,8 @@ FUSELIER Jules
 FUSELIER Jules
 FUSELIER Jules
 GHEUX Theo
-GHEUX Theo
-EL HABRIRI Samy
 //REGION 3
-74
+73
 24
 GUZELBABA Imran HADDAD
 Mohamed-Amine
@@ -194,6 +191,9 @@ MEKIDICHE Idris
 NAHI Amine
 NEIRA Leandro
 NEPOTU Gheorghe
+FUSELIER Jules
+FABRE Alexis
+GHEUX Theo
 //VOTE
 MARTIN-NEVOT Mickael
 GUZELBABA Imran
@@ -264,14 +264,9 @@ MARCHITTO Ilian
 MARCUS William
 MEFTAHI Mohamed
 MEGNOUCHE Riad
-MEJEAN Oriane
-MEKIDICHE Idris
-NAHI Amine
-NEIRA Leandro
-NEPOTU Gheorghe
 //REGION 4
 77
-26
+25
 NGOM Magueye
 NOIRET Maxime
 ORLANDI Lenny
@@ -375,11 +370,9 @@ SISE Aboubakar
 STEFANOVITCH Ilann
 TAHA CHAOUI Amir
 TORCHIN Maxence
-TORO Esteban
-TRAIKIA Rayane
 //REGION 5
-94
-31
+93
+30
 UYSUN Ali
 VALETTE Lilian
 WATRIPONT Jeremy
@@ -504,10 +497,8 @@ ATHERLY Evan
 AZOUG Kylian
 BAGNIS Enzo
 BARBERIS Alexis
-BAURENS-TORRENTE Valentin
-BEN GADHA Imen
 //REGION 6
-103
+101
 51
 BEN GADHA Imen
 BEN SALEM Mohamed
@@ -662,8 +653,6 @@ TORCHIN Maxence
 TORO Esteban
 TRAIKIA Rayane
 NGOM Magueye
-NOIRET Maxime
-ORLANDI Lenny
 //NATIONAL
 7
 ACEMYAN DE OLIVEIRA Ewan
