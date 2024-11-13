@@ -115,7 +115,6 @@ GRIGUER Nathan
 GUDENSCHWAGER Oliver
 GUL Furkan
 //VOTE
-// VOTE
 CANTOR Romain
 CELESTINE Samuel
 CANTOR Romain
