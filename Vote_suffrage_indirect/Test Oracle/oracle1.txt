@@ -1,27 +1,36 @@
+// VOICI LE FICHIER ORACLE DU CODE DE LA SAE 1.02 REPRESENTANT UN SUFFRAGE INDIRECT ( EX : VOTE AMERICAIN )
+
+//REGION 1
 Le Vainqueur de cette élection est : AHAMED Nasser
  
  Cette élection s'est terminée avec 4 vote(s) blanc(s) ! 
- 
+
+//REGION 2
 Le Vainqueur de cette élection est : BEN GADHA Imen
  
  Cette élection s'est terminée avec 3 vote(s) blanc(s) ! 
- 
+
+//REGION 3
 Le Vainqueur de cette élection est : HERNANDEZ Loic
  
  Cette élection s'est terminée avec 5 vote(s) blanc(s) ! 
- 
+
+//REGION 4
 Le Vainqueur de cette élection est : KAMARA Demba
  
  Cette élection s'est terminée avec 1 vote(s) blanc(s) ! 
- 
+
+//REGION 5
 Le Vainqueur de cette élection est : HERNANDEZ Loic
  
  Cette élection s'est terminée avec 1 vote(s) blanc(s) ! 
- 
+
+//REGION 6
 Le Vainqueur de cette élection est : FUSELIER Jules
  
  Cette élection s'est terminée avec 0 vote(s) blanc(s) ! 
- 
+
+//NATIONAL
 Le Vainqueur de cette élection est : CASALI Alain
  
  Cette élection s'est terminée avec 3 vote(s) blanc(s) ! 
