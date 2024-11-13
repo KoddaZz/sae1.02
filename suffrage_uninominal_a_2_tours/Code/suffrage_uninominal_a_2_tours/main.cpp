@@ -4,32 +4,44 @@
 
 using namespace std;
 
+string litUneString (){
+    string uneChaine;
+    while (true){
+        getline (cin, uneChaine);
+        if ((!cin) || (uneChaine.substr(0,2) != "//")) break;
+    }
+    return uneChaine;
+}
+
+int litUnEntier (){
+    string uneChaine;
+    while (true){
+        getline (cin, uneChaine);
+        if ((!cin) || (uneChaine.substr(0,2) != "//")) break;
+    }
+    return stoi(uneChaine);
+}
+
 void saisirCandidats(vector<string> & tableau_des_candidats)
 /* Cette procédure prend en paramètre un vecteur de string vide et demande à l'utilisateur de le remplir avec le nom des candidats */
 {
     // On vide le tableau au cas où le vecteur n'est pas vide
     tableau_des_candidats.clear();
-    unsigned nb_candidats;
+    size_t nb_candidats;
     string nom ;
     string chaine ;
-    cout << "Saisir le nombre de candidats : " ;
-    cin >> nb_candidats;
-    cout << endl;
+    nb_candidats = litUnEntier();
     for(size_t i = 1 ; i <= nb_candidats ; i = i + 1)
     {
         if (i == 1)
         {
-            cout << "Saisir le nom du premier candidat : " ;
-            cin >> nom ;
+            nom = litUneString();
             tableau_des_candidats.push_back(nom);
-            cout << endl;
         }
         else
         {
-            cout << "Saisir le nom du " << i << "eme candidat : " ;
-            cin >> nom ;
+            nom = litUneString();
             tableau_des_candidats.push_back(nom);
-            cout << endl;
         }
     }
 }
@@ -40,18 +52,15 @@ de remplir le vecteur vide avec le nombre de voix qu'a obtenu chaque candidat */
 {
     // On vide le tableau au cas où le vecteur n'est pas vide :
     votes.clear();
-
-    // L'utilisateur saisit les votes qu'ont obtenu les candidats :
+    
+    // On saisit les votes qu'ont obtenu les candidats :
     size_t vote_tmp ;
     for (size_t i = 0 ; i < tableau_candidats.size() ; i = i + 1)
     {
-        cout << "Saisir le nombre de voix qu'a obtenu " << tableau_candidats[i] << ": " ;
-        cin >> vote_tmp ;
+        vote_tmp = litUnEntier();
         votes.push_back(vote_tmp);
-        cout << endl;
+        
     }
-
-    // On affiche les votes :
 }
 
 int main()
@@ -59,21 +68,21 @@ int main()
     // Premier tour :
     vector <string> tableau_des_candidats ;
     saisirCandidats(tableau_des_candidats);
-
+    
     vector <size_t> votes ;
     saisirVotes(tableau_des_candidats,votes);
-
+    
     // On teste s'il y'a une majorité absolue
-
+    
     size_t somme_des_votes = 0 ;
     for ( unsigned i = 0 ; i < votes.size() ; i = i + 1)
     {
         somme_des_votes = somme_des_votes + votes[i] ;
     }
-
-    unsigned i = 0 ;
-    unsigned x = 0 ;
-
+    
+    unsigned i = 0 ; // compteur 
+    unsigned x = 0 ; // variable qui vaut 0 s'il n'y a pas de majorité absoule, 1 sinon
+    
     while(i < votes.size())
     {
         // Si un candidat a obtenu la majorité absolue :
@@ -83,7 +92,8 @@ int main()
                  << " a obtenue une majorité absolue avec "
                  << votes[i]
                  << " voix et remporte donc le vote."
-                 << endl;
+                 << endl ;
+            
             // Si il y'a une majorité absolue, une variable x de type "unsigned" vaut 1, sinon elle vaut 0
             x = x + 1 ;
             break ;
@@ -93,22 +103,20 @@ int main()
     // Si x vaut 0 ( c'est-à-dire qu'il n'y a pas de majorité absolue ) on procède au second tour :
     if (x == 0)
     {
-        cout << "Il n'y a pas de majorité absolue. Nous allons donc effectuer un second tour."
-             << endl;
-
+        
         // Second tour :
-
+        
         string premier_candidat ;
         string second_candidat ;
         size_t premier_vote = 0 ;
         size_t second_vote = 0 ;
         size_t indice = 0 ;
         size_t indice2 = 0 ;
-
+        
         /* On définit les deux candidats qui passe au second tour :
           premier_candidat est le candidat qui a obtenu le plus de votes au premier tour et
           second_candidat est le deuxième candidat qui a obtenu le plus de votes au premier tour */
-
+        
         for(size_t i = 0 ; i < votes.size() ; i = i + 1)
         {
             if (votes[i] > premier_vote)
@@ -117,9 +125,9 @@ int main()
                 indice = i ;
             }
         }
-
-        premier_candidat= tableau_des_candidats[indice] ;
-
+        
+        premier_candidat = tableau_des_candidats[indice] ;
+        
         for(size_t i = 0 ; i < votes.size() ; i = i + 1)
         {
             if ( i != indice)
@@ -130,19 +138,20 @@ int main()
                     indice2 = i ;
                 }
             }
-
+            
         }
-
+        
         second_candidat = tableau_des_candidats[indice2] ;
-
+        
         vector <string> tableau_des_candidats2 ;
         tableau_des_candidats2.push_back(premier_candidat);
         tableau_des_candidats2.push_back(second_candidat);
+        
         // On saisit le nombre de votes qu'on obtenu les candidats au second tour avec la procédure saisirVotes() :
         vector <size_t> votes_second_tour ;
         saisirVotes(tableau_des_candidats2,votes_second_tour);
-
-
+        
+        
         // Si le premier candidat a plus de votes que le second, il gagne :
         if (votes_second_tour[0] > votes_second_tour[1])
         {
@@ -157,8 +166,8 @@ int main()
                  << endl
                  << " C'est donc "
                  << tableau_des_candidats2[0]
-                 << " qui a obtenu la majorité et remporte ainsi le vote."
-                 << endl;
+                 << " qui a obtenu la majorité et remporte ainsi le vote.";
+            
         }
         // Sinon, si le second candidat a plus de votes que le premier, il gagne :
         else if (votes_second_tour[1] > votes_second_tour[0])
@@ -175,7 +184,7 @@ int main()
                  << "C'est donc "
                  << tableau_des_candidats2[1]
                  << " qui a obtenu la majorité et remporte ainsi le vote."
-                 << endl;
+                 << endl ;
         }
         // Sinon, il y'a égalité au second tour :
         else
@@ -202,17 +211,18 @@ int main()
                      << endl
                      << "C'est donc "
                      << tableau_des_candidats2[0]
-                     << " qui remporte le vote !"
-                     << endl;
+                     << " qui a obtenu la majorité et remporte ainsi le vote."
+                     << endl ;
+                
             }
             // Sinon, il y'a égalité au premier tour (en plus du deuxième tour) : Pas de chance !
             else
             {
                 cout << "Pas de chance ! Les deux candidats ont tous les deux obtenu le même nombre de voix au premier et au second tour ;-;";
-
+                
             }
-
-
+            
+            
         }
     }
 }
