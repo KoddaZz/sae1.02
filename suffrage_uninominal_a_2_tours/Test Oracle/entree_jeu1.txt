@@ -2,15 +2,241 @@
 // Saisir le nombre de candidats 
 5
 // Candidats :
-Ali
-Ewan
-Theo
-Alexis
-Jules
+AROUSSI BENTATA Adam
+ACEMYAN DE OLIVEIRA Ewan
+ACH Sofia
+AGGAB Mohammed
+AHAMED Nasser
+ALLARD Loan
+AMARA Sinda
+AMROUNE Akim
+ANTOINE Thomas
+ARBADJI Maxime
+ARBOUZ Iklil
+ARFI Maxime
+ARSENA Claire
+ATHERLY Evan
+AZOUG Kylian
+BAGNIS Enzo
+BARBERIS Alexis
+BAURENS - TORRENTE Valentin
+BEN GADHA Imen
+BEN SALEM Mohamed
+BENAHMED Younes
+BENHAFESSA Alexandre
+BILLUART Florian
+BORSOTTO Antonin
+BOUACHERIA-KEBIR Imed
+BOUDHIB Mohamed-Amine
+BOUDIA--THOMAS Akcyl
+BOUGHERARA Adam
+BREST-LESTRADE Hugo
+BURBECK Heather
+CANTOR Romain
+CELESTINE Samuel
+CHETIOUI Willem
+CLOT-GODARD Kenji
+CONTRUCCI Lou
+CORDOVANA Enzo
+COULPOTIN Evan
+CRESPO - MICHAILIDIS Dimitri
+CURNIER Anthony
+DAHMOUCHE Wissem
+DAOUAYRY Sofian
+DARGENTOLLE Francois
+DECAMPS Lou
+DEMANGE Martin
+DIAZ Gwenn
+DRIOUCHI Mohamed
+DUMONT Aline
+EDELSTEIN William
+EL FAHSSI Hicham
+EL HABRIRI Samy
+EL KASSOUF Simon
+FABRE Alexis
+FALFERI Angelo
+FAUTSCH Mathis
+FERRAT Jibril
+FUSELIER Jules
+GHEUX Theo
+GIUSIANO Eloise
+GRIGUER Nathan
+GUDENSCHWAGER Oliver
+GUL Furkan
+GUZELBABA Imran
+HADDAD Mohamed-Amine
+HELALI Amin
+HENG Hugo
+HERNANDEZ Loic
+HU Swan
+JACOB Alexandre
+KAMARA Demba
+KAMARZINE Aurelien
+KOLIAI Hamza
+KUROPATWA-BUTTE Adam
+LACORRE Axel
+LAURIOL-TORCQ Mathis
+LE DENMAT Pierre
+LEPAPE Lucas
+MAILHE Gustin
+MARCHITTO Ilian
+MARCUS William
+MEFTAHI Mohamed
+MEGNOUCHE Riad
+MEJEAN Oriane
+MEKIDICHE Idris
+NAHI Amine
+NEIRA Leandro
+NEPOTU Gheorghe
+NGOM Magueye
+NOIRET Maxime
+ORLANDI Lenny
+PANAIVA Jeremy
+PALOT Thomas
+PIBOULEAU Jean-Baptiste
+POGHOSSIAN Mariam
+QUILLIEC Matisse
+RADJOU Dinesh
+RAPANAKIS-BOURG Marius
+RATIANANAHARY Karmen
+REGNIER Vassili
+RIBBE Jules
+RINALDI Antoine
+RIVA KARAKA ABDEREMANE Imric
+ROFFIDAL Ambre
+ROMBI Matis
+SAADI Ismail
+SANTOS JORGE Francisco
+SENE Pablo
+SISE Aboubakar
+STEFANOVITCH Ilann
+TAHA CHAOUI Amir
+TORCHIN Maxence
+TORO Esteban
+TRAIKIA Rayane
+UYSUN Ali
+VALETTE Lilian
+WATRIPONT Jeremy
+ZEGGANE Sofien
 // Voix :
-5 
-6
-7
-2
+82
+159
+36
+28
+10
+48
+87
+85
+15
+18
+41
 22
+47
+22
+77
+66
+83
+34
+59
+43
+53
+88
+95
+31
+54
+52
+78
+71
+74
+22
+61
+40
+92
+11
+87
+71
+78
+59
+93
+47
+69
+44
+35
+39
+94
+28
+16
+85
+86
+59
+12
+18
+88
+53
+26
+62
+23
+51
+12
+94
+55
+48
+76
+66
+45
+24
+70
+30
+44
+95
+53
+55
+63
+78
+28
+48
+97
+60
+60
+60
+69
+56
+32
+45
+46
+61
+48
+70
+35
+76
+82
+55
+90
+46
+100
+21
+19
+85
+39
+100
+36
+51
+51
+68
+73
+100
+41
+66
+58
+16
+29
+86
+111
+20
+76
+17
+//Second tour : 
+3061
+3481
+
 
