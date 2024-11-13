@@ -1,12 +1,28 @@
-// voici le fichier de sortie de la sae 1.02 vote indirect
-Le Vainqueur de cette Èlection est†: VALETTE lilian
-Le Vainqueur de cette Èlection est†: TAHA CHAOUI amir
-Le Vainqueur de cette Èlection est†: SENE pablo
-Le Vainqueur de cette Èlection est†: ROMBI matis
-Le Vainqueur de cette Èlection est†: PALOT thomas
-Le Vainqueur de cette Èlection est†: ROMBI matis
-
-
-
-
-
+Le Vainqueur de cette √©lection est : AHAMED Nasser
+ 
+ Cette √©lection s'est termin√©e avec 4 vote(s) blanc(s) ! 
+ 
+Le Vainqueur de cette √©lection est : BEN GADHA Imen
+ 
+ Cette √©lection s'est termin√©e avec 3 vote(s) blanc(s) ! 
+ 
+Le Vainqueur de cette √©lection est : HERNANDEZ Loic
+ 
+ Cette √©lection s'est termin√©e avec 5 vote(s) blanc(s) ! 
+ 
+Le Vainqueur de cette √©lection est : KAMARA Demba
+ 
+ Cette √©lection s'est termin√©e avec 1 vote(s) blanc(s) ! 
+ 
+Le Vainqueur de cette √©lection est : HERNANDEZ Loic
+ 
+ Cette √©lection s'est termin√©e avec 1 vote(s) blanc(s) ! 
+ 
+Le Vainqueur de cette √©lection est : FUSELIER Jules
+ 
+ Cette √©lection s'est termin√©e avec 0 vote(s) blanc(s) ! 
+ 
+Le Vainqueur de cette √©lection est : CASALI Alain
+ 
+ Cette √©lection s'est termin√©e avec 3 vote(s) blanc(s) ! 
+ 
