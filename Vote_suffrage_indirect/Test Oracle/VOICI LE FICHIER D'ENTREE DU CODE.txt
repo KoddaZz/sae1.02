@@ -167,7 +167,7 @@ GHEUX Theo
 GHEUX Theo
 EL HABRIRI Samy
 //REGION 3
-53
+74
 24
 GUZELBABA Imran HADDAD
 Mohamed-Amine
@@ -194,14 +194,81 @@ MEKIDICHE Idris
 NAHI Amine
 NEIRA Leandro
 NEPOTU Gheorghe
-
 //VOTE
 MARTIN-NEVOT Mickael
-AGGAB Mohammed
-AGGAB Mohammed
-BENHAFESSA Alexandre
-AGGAB Mohammed
-AGGAB Mohammed
+GUZELBABA Imran
+HADDAD Mohamed-Amine
+HELALI Amin
+HENG Hugo
+HERNANDEZ Loic
+JACOB Alexandre
+HU Swan
+KAMARA Demba
+KAMARZINE Aurelien
+KOLIAI Hamza
+KUROPATWA-BUTTE Adam
+LACORRE Axel
+LAURIOL-TORCQ Mathis
+LE DENMAT Pierre
+LEPAPE Lucas
+MAILHE Gustin
+MARCHITTO Ilian
+MARCUS William
+MEFTAHI Mohamed
+MEGNOUCHE Riad
+MEJEAN Oriane
+MEKIDICHE Idris
+NAHI Amine
+NEIRA Leandro
+NEPOTU Gheorghe
+GUZELBABA Imran
+HADDAD Mohamed-Amine
+HENG Hugo
+HERNANDEZ Loic
+JACOB Alexandre
+HU Swan
+KAMARA Demba
+KAMARZINE Aurelien
+KOLIAI Hamza
+KUROPATWA-BUTTE Adam
+LACORRE Axel
+LAURIOL-TORCQ Mathis
+LE DENMAT Pierre
+MAILHE Gustin
+MARCHITTO Ilian
+MARCUS William
+MEFTAHI Mohamed
+MEGNOUCHE Riad
+MEJEAN Oriane
+MEKIDICHE Idris
+NAHI Amine
+NEIRA Leandro
+NEPOTU Gheorghe
+GUZELBABA Imran
+HADDAD Mohamed-Amine
+HELALI Amin
+HENG Hugo
+HERNANDEZ Loic
+JACOB Alexandre
+HU Swan
+KAMARA Demba
+KAMARZINE Aurelien
+KOLIAI Hamza
+KUROPATWA-BUTTE Adam
+LACORRE Axel
+LAURIOL-TORCQ Mathis
+LE DENMAT Pierre
+LEPAPE Lucas
+MAILHE Gustin
+MARCHITTO Ilian
+MARCUS William
+MEFTAHI Mohamed
+MEGNOUCHE Riad
+MEJEAN Oriane
+MEKIDICHE Idris
+NAHI Amine
+NEIRA Leandro
+NEPOTU Gheorghe
 //REGION 4
 12
 3
