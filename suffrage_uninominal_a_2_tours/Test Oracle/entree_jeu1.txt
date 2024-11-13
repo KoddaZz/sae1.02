@@ -1,4 +1,5 @@
 // VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS (JEU 1)
+// Et si tous les membres de la promotion organisait un vote pour élir le délégué de l'IUT Aix-Marseille ?
 // Saisir le nombre de candidats 
 116
 // Candidats :
