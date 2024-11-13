@@ -1,7 +1,7 @@
 // voici le fichier d’entree de la sae 1.02 suffrage indirect
 5
 // REGION 1
-6
+74
 30
 AHAMED Nasser
 AMROUNE Akim
@@ -111,7 +111,7 @@ BARBERIS Alexis
 FALFERI Angelo
 FERRAT Jibril
 // REGION 2
-6
+122
 40
 BEN GADHA Imen
 BEN SALEM Mohamed
@@ -279,7 +279,7 @@ ROFFIDAL Ambre
 ROMBI Matis
 SAADI Ismail
 //REGION 3
-6
+117
 40
 HERNANDEZ Loic
 JACOB Alexandre
@@ -322,7 +322,6 @@ STEFANOVITCH Ilann
 TAHA CHAOUI Amir
 TORCHIN Maxence
 TORO Esteban
-TRAIKIA Rayane
 //VOTE
 HERNANDEZ Loic
 JACOB Alexandre
@@ -443,7 +442,7 @@ ROFFIDAL Ambre
 ROMBI Matis
 SAADI Ismail
 // REGION 4
-6
+42
 40
 HERNANDEZ Loic
 JACOB Alexandre
@@ -486,7 +485,6 @@ FERRAT Jibril
 FUSELIER Jules
 GHEUX Theo
 GIUSIANO Eloise
-//VOTE
 //VOTE
 KAMARA Demba
 KAMARA Demba
@@ -532,7 +530,7 @@ GHEUX Theo
 GIUSIANO Eloise
 KAMARA Demba
 //REGION 5
-6
+42
 40
 GUZELBABA Imran HADDAD
 Mohamed-Amine
@@ -620,7 +618,7 @@ HERNANDEZ Loic
 SANTOS JORGE Francisco
 SENE Pablo
 //REGION 6
-6
+48
 50
 ANTOINE Thomas
 ARBADJI Maxime
@@ -724,7 +722,7 @@ EL FAHSSI Hicham
 EL HABRIRI Samy
 FUSELIER Jules
 //NATIONAL
-
+105
 ACH Sofia
 ALLARD Loan
 ARSENA Claire
