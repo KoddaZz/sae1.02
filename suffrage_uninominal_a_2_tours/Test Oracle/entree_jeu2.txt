@@ -1,4 +1,5 @@
 // VOICI LE FICHIER D'ENTREE DU CODE DE LA SAE 1.02 REPRESENTANT UN VOTE UNINOMINAL A DEUX TOURS (JEU 2)
+// Les membres de la promotion élisent le meilleur sport 
 // Saisir le nombre de candidats
 20
 // Candidats :
